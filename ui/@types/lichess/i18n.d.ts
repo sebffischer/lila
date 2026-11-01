@@ -2773,6 +2773,10 @@ interface I18n {
     continueTraining: string;
     /** Daily Puzzle */
     dailyPuzzle: string;
+    /** Defense puzzles */
+    defensePuzzles: string;
+    /** Your opponent has just made a threat. Find the only move that doesn't lose material or get you checkmated. */
+    defensePuzzlesDescription: string;
     /** Did you like this puzzle? */
     didYouLikeThisPuzzle: string;
     /** Difficulty level */
@@ -2791,6 +2795,8 @@ interface I18n {
     findTheBestMoveForBlack: string;
     /** Find the best move for white. */
     findTheBestMoveForWhite: string;
+    /** Find the only move that doesn't lose material. */
+    findTheOnlyMoveThatHolds: string;
     /** From game %s */
     fromGameLink: I18nFormat;
     /** From my games */
@@ -2805,6 +2811,8 @@ interface I18n {
     harder: string;
     /** Hardest */
     hardest: string;
+    /** Held on the first try: %s */
+    heldOnFirstTryX: I18nFormat;
     /** hidden */
     hidden: string;
     /** Puzzle history */
@@ -2813,6 +2821,8 @@ interface I18n {
     improvementAreas: string;
     /** Train these to optimise your progress! */
     improvementAreasDescription: string;
+    /** It parries %s */
+    itParriesX: I18nFormat;
     /** Jump to next puzzle immediately */
     jumpToNextPuzzleImmediately: string;
     /** Keep going… */
@@ -2845,8 +2855,12 @@ interface I18n {
     normal: string;
     /** That's not the move! */
     notTheMove: string;
+    /** The only move that holds! */
+    onlyMoveThatHolds: string;
     /** Openings you played the most in rated games */
     openingsYouPlayedTheMost: string;
+    /** Your opponent threatens %s */
+    opponentThreatensX: I18nFormat;
     /** Origin */
     origin: string;
     /** %s solved */
@@ -2881,6 +2895,8 @@ interface I18n {
     recommended: string;
     /** Search puzzles */
     searchPuzzles: string;
+    /** Show the threat */
+    showTheThreat: string;
     /** solved */
     solved: string;
     /** Special moves */
@@ -2893,6 +2909,10 @@ interface I18n {
     strengthDescription: string;
     /** Strengths */
     strengths: string;
+    /** This allows checkmate: %s */
+    thisAllowsMateX: I18nFormat;
+    /** This loses material: %s */
+    thisLosesMaterialX: I18nFormat;
     /** To get personalised puzzles: */
     toGetPersonalizedPuzzles: string;
     /** Try something else. */

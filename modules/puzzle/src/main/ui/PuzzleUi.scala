@@ -71,6 +71,22 @@ final class PuzzleUi(helpers: Helpers, val bits: PuzzleBits)(
       .flag(_.zen):
         bits.show.preload
 
+  def defense(puzzles: JsArray, pref: JsObject)(using Context) =
+    Page(trans.puzzle.defensePuzzles.txt())
+      .css("puzzle.defense")
+      .i18n(_.puzzle)
+      .js(PageModule("puzzle.defense", Json.obj("puzzles" -> puzzles, "pref" -> pref)))
+      .graph(
+        title = trans.puzzle.defensePuzzles.txt(),
+        description = trans.puzzle.defensePuzzlesDescription.txt(),
+        url = routeUrl(routes.Puzzle.defense)
+      )
+      .flag(_.zoom):
+        main(cls := "puzzle-defense")(
+          div(cls := "puzzle-defense__board main-board")(chessgroundBoard),
+          div(cls := "puzzle-defense__side")
+        )
+
   def themes(all: PuzzleAngle.All)(using ctx: Context) =
     Page(trans.puzzle.puzzleThemes.txt())
       .css("puzzle.page")

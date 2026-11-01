@@ -143,6 +143,10 @@ final class Puzzle(env: Env, apiC: => Api) extends LilaController(env):
       views.puzzle.ui.show(puzzle, json, prefJson, PuzzleSettings.default, langPath)
     .map(_.noCache.enforceCrossSiteIsolation)
 
+  def defense = Open: ctx ?=>
+    NoBot:
+      Ok.page(views.puzzle.ui.defense(lila.puzzle.PuzzleDefense.json, jsonView.pref(ctx.pref)))
+
   def apiStreak = Anon:
     env.puzzle.streakJsonAndPuzzle.orNotFound: (json, _) =>
       JsonOk(json)

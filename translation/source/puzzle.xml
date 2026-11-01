@@ -94,4 +94,14 @@ Play rapid and classical games to increase your chances of having a puzzle added
   <string name="noPuzzlesToShow">Nothing to show, go play some puzzles first!</string>
   <string name="improvementAreasDescription">Train these to optimise your progress!</string>
   <string name="strengthDescription">You perform the best in these themes</string>
+  <string name="defensePuzzles">Defense puzzles</string>
+  <string name="defensePuzzlesDescription">Your opponent has just made a threat. Find the only move that doesn't lose material or get you checkmated.</string>
+  <string name="findTheOnlyMoveThatHolds">Find the only move that doesn't lose material.</string>
+  <string name="showTheThreat">Show the threat</string>
+  <string name="opponentThreatensX" comment="%s is a sequence of chess moves, like 12...Nd4 13.Qd1 Nxe2+">Your opponent threatens %s</string>
+  <string name="onlyMoveThatHolds">The only move that holds!</string>
+  <string name="itParriesX" comment="%s is a sequence of chess moves, like 12...Nd4 13.Qd1 Nxe2+">It parries %s</string>
+  <string name="thisLosesMaterialX" comment="%s is a sequence of chess moves, like 12...Nd4 13.Qd1 Nxe2+">This loses material: %s</string>
+  <string name="thisAllowsMateX" comment="%s is a sequence of chess moves, like 12...Qh2+ 13.Kf1 Qh1#">This allows checkmate: %s</string>
+  <string name="heldOnFirstTryX" comment="%s is a score, like 7 / 10">Held on the first try: %s</string>
 </resources>

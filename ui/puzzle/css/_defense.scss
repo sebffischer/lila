@@ -1,0 +1,130 @@
+#main-wrap {
+  ---main-max-width: calc(100vh - #{$site-header-outer-height} - 9rem);
+
+  @include mq-at-least-col2 {
+    ---main-max-width: auto;
+  }
+}
+
+.puzzle-defense {
+  display: grid;
+  gap: $block-gap;
+  grid-template-areas: 'board' 'side';
+
+  @include mq-at-least-col2 {
+    grid-template-columns: var(---col2-uniboard-width) $col2-uniboard-table;
+    grid-template-rows: fit-content(0);
+    grid-template-areas: 'board side';
+  }
+
+  &__board {
+    grid-area: board;
+  }
+
+  &__side {
+    @extend %box-neat, %flex-column;
+
+    grid-area: side;
+    gap: 1.5em;
+    background: $c-bg-box;
+    padding: 1.5em 2em;
+  }
+
+  &__title {
+    @extend %flex-between;
+
+    h1 {
+      @extend %roboto;
+
+      font-size: 1.8em;
+      margin: 0;
+    }
+
+    span {
+      color: $c-font-dim;
+    }
+  }
+
+  &__feedback {
+    background: $c-bg-zebra;
+    padding: 1.5em;
+    min-height: 9rem;
+    display: flex;
+    align-items: center;
+
+    .player {
+      display: flex;
+      align-items: center;
+    }
+
+    .no-square {
+      flex: 0 0 64px;
+      height: 64px;
+      margin-inline-end: 10px;
+    }
+
+    piece {
+      position: inherit;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .icon {
+      flex: 0 0 64px;
+      font-size: 50px;
+      line-height: 64px;
+      text-align: center;
+      margin-inline-end: 10px;
+    }
+
+    &.good .icon,
+    &.solution .icon {
+      color: $c-good;
+    }
+
+    &.fail .icon {
+      color: $c-bad;
+    }
+
+    .instruction > * {
+      display: block;
+    }
+
+    .instruction strong {
+      font-size: 1.5em;
+      margin-bottom: 0.3em;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5em;
+    justify-content: center;
+  }
+
+  &__session a {
+    cursor: pointer;
+
+    &:not(.current, .result-true, .result-false) {
+      background: $c-bg-zebra2;
+      color: $c-font-dim;
+    }
+  }
+
+  &__score {
+    @extend %flex-between;
+
+    margin-top: 0.8em;
+    color: $c-font-dim;
+  }
+
+  &__source {
+    @extend %flex-between;
+
+    margin-top: auto;
+    font-size: 0.9em;
+    color: $c-font-dim;
+  }
+}
