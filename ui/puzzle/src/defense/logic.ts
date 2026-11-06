@@ -4,7 +4,7 @@ import { makeSanAndPlay } from 'chessops/san';
 import type { Move } from 'chessops/types';
 import { makeUci, opposite, parseUci } from 'chessops/util';
 
-import type { DefenseLine, DefensePuzzle } from './interfaces';
+import type { DefenseLine, DefensePuzzle, DefenseStep } from './interfaces';
 
 export const positionOf = (fen: FEN): Chess => Chess.fromSetup(parseFen(fen).unwrap()).unwrap();
 
@@ -21,13 +21,19 @@ export const normalUci = (pos: Position, move: Move | Uci): Uci | undefined => {
   return m && makeUci(normalizeMove(pos, m));
 };
 
-export const isSolution = (p: DefensePuzzle, pos: Position, uci: Uci): boolean =>
-  normalUci(pos, p.solution) === uci;
+export const isSolution = (step: DefenseStep, pos: Position, uci: Uci): boolean =>
+  normalUci(pos, step.solution) === uci;
 
-export function refutationOf(p: DefensePuzzle, pos: Position, uci: Uci): DefenseLine | null {
-  for (const [key, line] of Object.entries(p.refutations)) if (normalUci(pos, key) === uci) return line;
+export function refutationOf(step: DefenseStep, pos: Position, uci: Uci): DefenseLine | null {
+  for (const [key, line] of Object.entries(step.refutations)) if (normalUci(pos, key) === uci) return line;
   return null;
 }
+
+// The rest of the defence from step `from` on: the defender's moves and the opponent's replies.
+export const solutionLine = (p: DefensePuzzle, from = 0): Uci[] =>
+  p.steps
+    .slice(from)
+    .flatMap((s, i, rest) => (s.reply && i + 1 < rest.length ? [s.solution, s.reply] : [s.solution]));
 
 // The same position with the opponent to move, to show what it threatens.
 export function passPosition(pos: Chess): Chess | undefined {

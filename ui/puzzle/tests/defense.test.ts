@@ -4,13 +4,14 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, test } from 'node:test';
 
-import type { DefensePuzzle } from '../src/defense/interfaces';
+import type { DefensePuzzle, DefenseStep } from '../src/defense/interfaces';
 import {
   isSolution,
   normalUci,
   passPosition,
   positionOf,
   sanLine,
+  solutionLine,
   startPosition,
 } from '../src/defense/logic';
 
@@ -62,42 +63,69 @@ describe('defense puzzle logic', () => {
 });
 
 describe('defense puzzle data', () => {
-  test('has 10 puzzles with distinct ids', () => {
-    assert.equal(puzzles.length, 10);
+  test('has puzzles with distinct ids, from easy to hard', () => {
+    assert.ok(puzzles.length >= 10);
     assert.equal(new Set(puzzles.map(p => p.id)).size, puzzles.length);
+    const ratings = puzzles.map(p => p.rating);
+    assert.deepEqual(
+      ratings,
+      [...ratings].sort((a, b) => a - b),
+    );
   });
 
   for (const p of puzzles) {
     test(`puzzle ${p.id} is consistent`, () => {
-      const before = positionOf(p.fen);
-      assert.ok(legal(before, p.move), 'the opponent move is legal');
+      assert.ok(legal(positionOf(p.fen), p.move), 'the opponent move is legal');
+      assert.ok(p.steps.length > 0, 'the defence has at least one move');
+      assert.ok(p.rating > 0, 'the puzzle has a rating');
       const pos = startPosition(p);
-      assert.ok(legal(pos, p.solution), 'the solution is legal');
-      assert.ok(isSolution(p, pos, normalUci(pos, p.solution)!));
-
-      // every legal move but the solution has a refutation, and nothing else does
-      const wrong = [...pos.allDests()].flatMap(([from, tos]) =>
-        [...tos].map(to => makeUci(normalizeMove(pos, { from, to }))),
-      );
-      const refuted = Object.keys(p.refutations).map(uci => normalUci(pos, uci));
-      const expected = wrong.filter(uci => uci !== normalUci(pos, p.solution));
-      assert.ok(expected.length >= 3, 'at least 3 wrong moves');
-      // promotions: chessops dests list one move per square, the data one per piece
-      assert.deepEqual(new Set(refuted.map(u => u!.slice(0, 4))), new Set(expected));
-
-      for (const [uci, r] of Object.entries(p.refutations)) {
-        const after = pos.clone();
-        after.play(parseUci(uci)!);
-        assert.ok(r.line.length > 0, `${uci} has a refutation`);
-        assert.ok(playLine(after, r.line), `${uci} refutation is legal`);
-        assert.ok(r.mate || (r.material ?? 0) > 0 || r.eval < -150, `${uci} loses something`);
-      }
-
-      if (pos.isCheck()) assert.equal(p.threat, null, 'no threat line when in check');
-      else {
-        assert.ok(p.threat, 'there is a threat');
-        assert.ok(playLine(passPosition(pos)!, p.threat.line), 'the threat line is legal');
-      }
+      p.steps.forEach((step, k) => {
+        const last = k === p.steps.length - 1;
+        assert.ok(legal(pos, step.solution), `step ${k + 1}: the solution is legal`);
+        assert.ok(isSolution(step, pos, normalUci(pos, step.solution)!));
+        assert.equal(!step.reply, last, `step ${k + 1}: only the last step has no reply`);
+        checkStep(pos, step, k + 1);
+        pos.play(parseUci(step.solution)!);
+        if (step.reply) {
+          assert.ok(legal(pos, step.reply), `step ${k + 1}: the reply is legal`);
+          pos.play(parseUci(step.reply)!);
+        }
+      });
     });
   }
+
+  test('the solution line alternates defence and replies', () => {
+    const p = puzzles.find(p => p.steps.length > 1) ?? puzzles[0];
+    const line = solutionLine(p);
+    assert.equal(line.length, 2 * p.steps.length - 1);
+    assert.deepEqual(solutionLine(p, p.steps.length - 1), [p.steps[p.steps.length - 1].solution]);
+  });
 });
+
+function checkStep(pos: ReturnType<typeof positionOf>, step: DefenseStep, n: number) {
+  // every legal move but the solution has a refutation, and nothing else does
+  const wrong = [...pos.allDests()].flatMap(([from, tos]) =>
+    [...tos].map(to => makeUci(normalizeMove(pos, { from, to }))),
+  );
+  const refuted = Object.keys(step.refutations).map(uci => normalUci(pos, uci));
+  const expected = wrong.filter(uci => uci !== normalUci(pos, step.solution));
+  assert.ok(expected.length >= 3, `step ${n}: at least 3 wrong moves`);
+  // promotions: chessops dests list one move per square, the data one per piece
+  assert.deepEqual(new Set(refuted.map(u => u!.slice(0, 4))), new Set(expected));
+
+  for (const [uci, r] of Object.entries(step.refutations)) {
+    const after = pos.clone();
+    after.play(parseUci(uci)!);
+    assert.ok(r.line.length > 0, `step ${n}: ${uci} has a refutation`);
+    assert.ok(playLine(after, r.line), `step ${n}: ${uci} refutation is legal`);
+    // the line shown must make the loss visible: a mate, or at least a pawn
+    assert.ok(r.mate || (r.material ?? 0) >= 100, `step ${n}: ${uci} loses something`);
+  }
+
+  if (pos.isCheck()) assert.equal(step.threat, null, `step ${n}: no threat line when in check`);
+  else {
+    assert.ok(step.threat, `step ${n}: there is a threat`);
+    assert.ok(playLine(passPosition(pos)!, step.threat.line), `step ${n}: the threat line is legal`);
+    assert.ok(step.threat.mate || (step.threat.material ?? 0) >= 100, `step ${n}: the threat wins something`);
+  }
+}

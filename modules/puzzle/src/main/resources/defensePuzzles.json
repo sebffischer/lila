@@ -1,1797 +1,5721 @@
 [
   {
-    "id": "05edf95j-22",
-    "fen": "r1bq1rk1/pp3ppp/2n2b2/3N4/8/5N2/PPP1BPPP/R2Q1RK1 b - - 0 11",
-    "move": "f6b2",
-    "solution": "a1b1",
-    "threat": {
-      "line": ["b2a1"],
-      "material": 500,
-      "eval": -486
-    },
-    "refutations": {
-      "c2c4": {
-        "line": ["b2a1"],
-        "material": 200,
-        "eval": -294
-      },
-      "d5e3": {
-        "line": ["b2a1"],
-        "material": 200,
-        "eval": -296
-      },
-      "d1d2": {
-        "line": ["b2a1"],
-        "material": 200,
-        "eval": -311
-      },
-      "d5f4": {
-        "line": ["b2a1"],
-        "material": 200,
-        "eval": -312
-      },
-      "d1d3": {
-        "line": ["b2a1"],
-        "material": 200,
-        "eval": -354
-      },
-      "e2c4": {
-        "line": ["b2a1"],
-        "material": 200,
-        "eval": -403
-      },
-      "h2h4": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -456
-      },
-      "f1e1": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -458
-      },
-      "e2d3": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -461
-      },
-      "d1b1": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -461
-      },
-      "f3g5": {
-        "line": ["b2a1", "g5h7", "g8h7"],
-        "material": 700,
-        "eval": -462
-      },
-      "g2g3": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -466
-      },
-      "h2h3": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -473
-      },
-      "f3d2": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -474
-      },
-      "a2a4": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -477
-      },
-      "c2c3": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -480
-      },
-      "a1c1": {
-        "line": ["b2c1"],
-        "material": 500,
-        "eval": -481
-      },
-      "a2a3": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -483
-      },
-      "e2b5": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -492
-      },
-      "d1e1": {
-        "line": ["d8d5"],
-        "material": 300,
-        "eval": -492
-      },
-      "d5b4": {
-        "line": ["c6b4"],
-        "material": 300,
-        "eval": -493
-      },
-      "e2a6": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -497
-      },
-      "g2g4": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -507
-      },
-      "g1h1": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -507
-      },
-      "f3e1": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -512
-      },
-      "f3e5": {
-        "line": ["b2a1", "d1a1", "d8d5", "e5c6", "d5c6", "e2f3", "c6c2"],
-        "material": 600,
-        "eval": -515
-      },
-      "f3h4": {
-        "line": ["b2a1"],
-        "material": 500,
-        "eval": -516
-      },
-      "d5b6": {
-        "line": ["a7b6"],
-        "material": 300,
-        "eval": -519
-      },
-      "d5c7": {
-        "line": ["d8c7"],
-        "material": 300,
-        "eval": -525
-      },
-      "f3d4": {
-        "line": ["c6d4"],
-        "material": 300,
-        "eval": -526
-      },
-      "d5e7": {
-        "line": ["c6e7", "d1d8", "f8d8"],
-        "material": 300,
-        "eval": -526
-      },
-      "d5c3": {
-        "line": ["b2c3"],
-        "material": 300,
-        "eval": -529
-      },
-      "d5f6": {
-        "line": ["b2f6"],
-        "material": 300,
-        "eval": -548
-      },
-      "d1c1": {
-        "line": ["b2c1", "f1c1", "d8d5"],
-        "material": 900,
-        "eval": -644
-      },
-      "d1d4": {
-        "line": ["c6d4", "f3d4", "d8d5", "d4b3", "b2a1"],
-        "material": 1100,
-        "eval": -777
+    "id": "q7h4AXG9-29",
+    "fen": "rnbB1rk1/5ppp/p7/8/4p3/1Nn5/PPP2PPP/R3K2R w KQ - 0 15",
+    "move": "d8e7",
+    "steps": [
+      {
+        "solution": "f8e8",
+        "threat": {
+          "line": ["e7f8", "g8f8", "b2c3"],
+          "material": 500,
+          "eval": -438
+        },
+        "refutations": {
+          "c3b5": {
+            "line": ["e7f8"],
+            "material": 200,
+            "eval": 0
+          },
+          "c3a4": {
+            "line": ["e7f8"],
+            "material": 200,
+            "eval": -21
+          },
+          "c3d5": {
+            "line": ["e7f8", "g8f8", "e1c1", "c8e6", "h1e1", "e4e3", "f2e3"],
+            "material": 300,
+            "eval": -32
+          },
+          "c3d1": {
+            "line": ["e7f8"],
+            "material": 400,
+            "eval": -311
+          },
+          "e4e3": {
+            "line": ["e7f8", "e3f2", "e1f2"],
+            "material": 500,
+            "eval": -357
+          },
+          "c8e6": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -366
+          },
+          "c3a2": {
+            "line": ["e7f8", "g8f8", "a1a2"],
+            "material": 400,
+            "eval": -370
+          },
+          "c3e2": {
+            "line": ["e7f8"],
+            "material": 500,
+            "eval": -374
+          },
+          "b8c6": {
+            "line": ["e7f8"],
+            "material": 400,
+            "eval": -378
+          },
+          "c8g4": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -389
+          },
+          "c8h3": {
+            "line": ["e7f8"],
+            "material": 400,
+            "eval": -399
+          },
+          "a8a7": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -401
+          },
+          "a6a5": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -404
+          },
+          "b8d7": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -405
+          },
+          "f7f5": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -409
+          },
+          "c8f5": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -416
+          },
+          "c8b7": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -418
+          },
+          "h7h6": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -421
+          },
+          "h7h5": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -426
+          },
+          "g7g6": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -427
+          },
+          "g7g5": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -432
+          },
+          "c8d7": {
+            "line": ["e7f8", "g8f8", "b2c3", "d7e6", "b3c5", "b8d7", "c5e4"],
+            "material": 600,
+            "eval": -437
+          },
+          "f7f6": {
+            "line": ["e7f8", "g8f8", "b2c3"],
+            "material": 500,
+            "eval": -439
+          },
+          "c3b1": {
+            "line": ["e7f8", "g8f8", "a1b1"],
+            "material": 500,
+            "eval": -441
+          },
+          "f8d8": {
+            "line": ["e7d8"],
+            "material": 500,
+            "eval": -471
+          },
+          "g8h8": {
+            "line": ["e7f8"],
+            "material": 500,
+            "eval": -534
+          }
+        }
       }
-    },
+    ],
     "game": {
-      "id": "05edf95j",
-      "ply": 22,
-      "white": "Ben_Dover",
-      "black": "cheesedout"
-    }
+      "id": "q7h4AXG9",
+      "ply": 29,
+      "white": "Ramsay__Bolton",
+      "black": "lbg715"
+    },
+    "rating": 690
   },
   {
-    "id": "1tcrixcg-19",
-    "fen": "r3kb1r/pp1bppp1/2nq1n1p/2p5/5P2/2NP1N2/PPP1B1PP/R1B1QRK1 w kq - 0 10",
-    "move": "c3b5",
-    "solution": "d6b8",
-    "threat": {
-      "line": ["b5d6"],
-      "material": 600,
-      "eval": -488
-    },
-    "refutations": {
-      "e8c8": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -460
-      },
-      "h8g8": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -476
-      },
-      "a8c8": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -484
-      },
-      "g7g6": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -493
-      },
-      "a7a6": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -495
-      },
-      "a7a5": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -496
-      },
-      "c6b4": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -498
-      },
-      "h6h5": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -498
-      },
-      "b7b6": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -500
-      },
-      "a8d8": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -504
-      },
-      "h8h7": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -509
-      },
-      "d7e6": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -513
-      },
-      "e7e6": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -514
-      },
-      "f6d5": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -522
-      },
-      "d7g4": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -524
-      },
-      "d7f5": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -524
-      },
-      "e8d8": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -527
-      },
-      "f6h7": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -529
-      },
-      "d7c8": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -530
-      },
-      "c6d8": {
-        "line": ["b5d6", "e7d6", "b2b4", "f8e7", "b4c5"],
-        "material": 700,
-        "eval": -530
-      },
-      "c5c4": {
-        "line": ["b5d6", "e7d6", "d3d4", "e8c8", "e2c4"],
-        "material": 700,
-        "eval": -531
-      },
-      "f6g8": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -533
-      },
-      "g7g5": {
-        "line": ["b5d6", "e7d6", "f4g5"],
-        "material": 700,
-        "eval": -547
-      },
-      "c6b8": {
-        "line": ["b5d6", "e7d6", "b2b4", "f8e7", "b4c5"],
-        "material": 700,
-        "eval": -552
-      },
-      "a8b8": {
-        "line": ["f3e5", "c6d4", "b5d6"],
-        "material": 600,
-        "eval": -555
-      },
-      "f6e4": {
-        "line": ["b5d6", "e4d6", "c1e3", "g7g5", "e3c5"],
-        "material": 700,
-        "eval": -565
-      },
-      "f6g4": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -569
-      },
-      "f6h5": {
-        "line": ["f3e5", "h5f6", "b5d6"],
-        "material": 600,
-        "eval": -579
-      },
-      "c6d4": {
-        "line": ["b5d6"],
-        "material": 600,
-        "eval": -591
-      },
-      "e7e5": {
-        "line": ["b5d6", "f8d6", "f4e5", "d6c7", "e5f6"],
-        "material": 1000,
-        "eval": -608
-      },
-      "c6a5": {
-        "line": ["b5d6", "e7d6", "e1a5"],
-        "material": 900,
-        "eval": -619
-      },
-      "d6d5": {
-        "line": ["b5c7", "e8d8", "c7d5", "f6d5", "c1d2", "g7g5", "f4g5"],
-        "material": 700,
-        "eval": -626
-      },
-      "d6e6": {
-        "line": ["b5c7", "e8d8", "c7e6"],
-        "material": 600,
-        "eval": -645
-      },
-      "d6d4": {
-        "line": ["f3d4", "c5d4", "b5c7", "e8d8", "c7a8"],
-        "material": 1100,
-        "eval": -679
-      },
-      "d7h3": {
-        "line": ["b5d6", "e7d6", "g2h3"],
-        "material": 900,
-        "eval": -694
-      },
-      "d6f4": {
-        "line": ["c1f4"],
-        "material": 800,
-        "eval": -694
-      },
-      "d6d3": {
-        "line": ["e2d3", "e8c8", "f3e5", "e7e6", "e5f7"],
-        "material": 900,
-        "eval": -704
-      },
-      "c6e5": {
-        "line": ["b5d6", "e7d6", "f4e5", "d6e5", "f3e5"],
-        "material": 900,
-        "eval": -710
-      },
-      "d6e5": {
-        "line": ["f4e5"],
-        "material": 900,
-        "eval": -735
-      },
-      "d6c7": {
-        "line": ["b5c7", "e8d8", "c7a8"],
-        "material": 1400,
-        "eval": -839
+    "id": "lxpSzxpz-29",
+    "fen": "r2q1rk1/1pp2pp1/p2p1b1p/4p2b/4P3/1PNP1N1P/1PP2PP1/R2Q1RK1 w - - 1 15",
+    "move": "g2g4",
+    "steps": [
+      {
+        "solution": "h5g6",
+        "threat": {
+          "line": ["g4h5"],
+          "material": 300,
+          "eval": -456
+        },
+        "refutations": {
+          "h5g4": {
+            "line": ["h3g4"],
+            "material": 200,
+            "eval": -340
+          },
+          "d8d7": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -370
+          },
+          "f6e7": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -379
+          },
+          "d8c8": {
+            "line": ["g4h5", "c8h3", "f3h2", "h3e6", "c3d5", "f6g5", "d5c7"],
+            "material": 300,
+            "eval": -381
+          },
+          "d8e8": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -388
+          },
+          "g8h8": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -390
+          },
+          "f6g5": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -393
+          },
+          "f6h4": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -402
+          },
+          "a6a5": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -410
+          },
+          "b7b5": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -411
+          },
+          "c7c6": {
+            "line": ["g4h5", "d8d7", "g1g2", "f6d8", "d3d4", "f7f5", "d4e5"],
+            "material": 400,
+            "eval": -430
+          },
+          "a8b8": {
+            "line": ["g4h5", "f6g5", "d3d4", "f7f5", "d4e5"],
+            "material": 400,
+            "eval": -431
+          },
+          "d8e7": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -435
+          },
+          "g7g5": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -435
+          },
+          "d6d5": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -436
+          },
+          "g7g6": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -441
+          },
+          "a8c8": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -448
+          },
+          "b7b6": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -451
+          },
+          "f8e8": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -453
+          },
+          "g8h7": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -453
+          },
+          "d8b8": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -455
+          },
+          "c7c5": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -456
+          },
+          "a8a7": {
+            "line": ["g4h5"],
+            "material": 300,
+            "eval": -465
+          }
+        }
       }
-    },
+    ],
     "game": {
-      "id": "1tcrixcg",
-      "ply": 19,
-      "white": "ars72",
-      "black": "Voltvolf"
-    }
+      "id": "lxpSzxpz",
+      "ply": 29,
+      "white": "nbtodder",
+      "black": "Tayeb1999"
+    },
+    "rating": 770
   },
   {
-    "id": "yb9kjyej-15",
-    "fen": "r1bqk2r/ppp2ppp/2n2P2/2b5/2pp4/5N2/PPP2PPP/RNBQ1RK1 w kq - 0 8",
-    "move": "f6g7",
-    "solution": "h8g8",
-    "threat": {
-      "line": ["g7h8q"],
-      "material": 1300,
-      "eval": -986
-    },
-    "refutations": {
-      "d8f6": {
-        "line": ["g7h8b"],
-        "material": 400,
-        "eval": -543
-      },
-      "h8f8": {
-        "line": ["f1e1", "c5e7", "g7f8q"],
-        "material": 400,
-        "eval": -564
-      },
-      "e8d7": {
-        "line": ["c1g5", "h8g8", "g5d8"],
-        "material": 600,
-        "eval": -610
-      },
-      "e8e7": {
-        "line": ["f1e1", "c8e6", "e1e6", "f7e6", "c1g5", "e7d7", "g5d8"],
-        "material": 400,
-        "eval": -628
-      },
-      "c8e6": {
-        "line": ["g7h8q"],
-        "material": 1300,
-        "eval": -826
-      },
-      "c8g4": {
-        "line": ["g7h8q"],
-        "material": 1300,
-        "eval": -852
-      },
-      "c8h3": {
-        "line": ["g7h8q"],
-        "material": 1300,
-        "eval": -893
-      },
-      "c8f5": {
-        "line": ["g7h8q"],
-        "material": 1300,
-        "eval": -895
-      },
-      "c5f8": {
-        "line": ["g7h8q", "c8e6", "c1g5", "d8g5", "f3g5"],
-        "material": 1900,
-        "eval": -904
-      },
-      "d8d6": {
-        "line": ["g7h8q"],
-        "material": 1300,
-        "eval": -920
-      },
-      "d8e7": {
-        "line": ["g7h8q"],
-        "material": 1300,
-        "eval": -923
-      },
-      "h7h6": {
-        "line": ["g7h8q", "e8e7", "h8h6"],
-        "material": 1400,
-        "eval": -933
-      },
-      "c8d7": {
-        "line": ["g7h8q", "c5f8", "f1e1", "d7e6", "c1g5", "d8g5", "f3g5"],
-        "material": 1900,
-        "eval": -935
-      },
-      "d4d3": {
-        "line": ["g7h8q", "e8d7", "h8h7"],
-        "material": 1400,
-        "eval": -963
-      },
-      "f7f6": {
-        "line": ["g7h8q", "e8d7", "h8h7"],
-        "material": 1400,
-        "eval": -966
-      },
-      "h7h5": {
-        "line": ["g7h8q"],
-        "material": 1300,
-        "eval": -966
-      },
-      "b7b5": {
-        "line": ["g7h8q", "e8d7", "h8h7"],
-        "material": 1400,
-        "eval": -968
-      },
-      "c5a3": {
-        "line": ["g7h8q", "a3f8", "b1c3", "c8e6", "c3e4", "d4d3", "c2d3"],
-        "material": 1400,
-        "eval": -969
-      },
-      "c5d6": {
-        "line": ["g7h8q", "e8d7", "h8h7"],
-        "material": 1400,
-        "eval": -972
-      },
-      "c5b4": {
-        "line": ["g7h8q", "b4f8", "b1c3", "c8e6", "c3e4", "d4d3", "c2d3"],
-        "material": 1400,
-        "eval": -973
-      },
-      "c5e7": {
-        "line": ["g7h8q", "e7f8", "b1c3", "c8e6", "c3e4", "d4d3", "c2d3"],
-        "material": 1400,
-        "eval": -975
-      },
-      "a7a6": {
-        "line": ["g7h8q", "e8d7", "h8h7"],
-        "material": 1400,
-        "eval": -981
-      },
-      "c4c3": {
-        "line": ["g7h8q", "c5f8", "b1c3", "c8e6", "c3e4", "e8d7", "h8h7"],
-        "material": 1500,
-        "eval": -990
-      },
-      "a7a5": {
-        "line": ["g7h8q", "e8d7", "h8h7"],
-        "material": 1400,
-        "eval": -995
-      },
-      "d8d5": {
-        "line": ["g7h8q", "c5f8", "b1c3", "d5d6", "c3e4", "c8g4", "e4d6"],
-        "material": 1900,
-        "eval": -1005
-      },
-      "a8b8": {
-        "line": ["g7h8q", "e8d7", "h8h7"],
-        "material": 1400,
-        "eval": -1025
-      },
-      "b7b6": {
-        "line": ["g7h8q"],
-        "material": 1300,
-        "eval": -1040
-      },
-      "d8h4": {
-        "line": ["g7h8q", "c5f8", "f3h4"],
-        "material": 2200,
-        "eval": -1051
-      },
-      "c6b4": {
-        "line": ["g7h8q", "c5f8", "d1e1", "c8e6", "e1b4"],
-        "material": 1600,
-        "eval": -1061
-      },
-      "c5b6": {
-        "line": ["g7h8q", "e8d7", "h8h7", "d7e8", "h7g8", "e8d7", "g8f7"],
-        "material": 1500,
-        "eval": -1082
-      },
-      "c6e5": {
-        "line": ["g7h8q", "c5f8", "h8e5", "c8e6", "d1d4", "d8d4", "e5d4"],
-        "material": 1700,
-        "eval": -1099
-      },
-      "f7f5": {
-        "line": ["g7h8q", "c5f8", "f1e1", "c8e6", "e1e6", "e8d7", "h8h7"],
-        "material": 1700,
-        "eval": -1137
-      },
-      "d8d7": {
-        "line": ["f1e1", "d7e7", "g7h8q", "e8d7", "c1g5", "f7f6", "g5f6"],
-        "material": 1400,
-        "eval": -1330
-      },
-      "c6a5": {
-        "line": ["g7h8q", "c5f8", "c1h6", "e8d7", "d1d4", "d7c6", "d4d8"],
-        "material": 2300,
-        "eval": -1380
-      },
-      "d8g5": {
-        "line": ["g7h8q", "c5f8", "c1g5", "d4d3", "c2d3", "c8e6", "d3c4"],
-        "material": 2400,
-        "eval": -1394
-      },
-      "c6e7": {
-        "line": ["g7h8q", "e7g8", "h8g8", "c5f8", "c1h6", "d8e7", "h6f8"],
-        "material": 1900,
-        "eval": -1461
-      },
-      "c6b8": {
-        "line": ["g7h8q", "c5f8", "c1h6", "d8e7", "h6f8"],
-        "material": 1600,
-        "eval": -1683
+    "id": "y95gTxIi-28",
+    "fen": "r1b2rk1/2p2ppp/p3qn2/1p1ppNB1/4P3/1P1P1Q2/PP3PPP/R3K2R b KQ - 1 14",
+    "move": "d5e4",
+    "steps": [
+      {
+        "solution": "d3e4",
+        "threat": {
+          "line": ["e4f3", "f5g7", "g8g7"],
+          "material": 1000,
+          "eval": -818
+        },
+        "refutations": {
+          "f5g7": {
+            "line": ["e4f3", "g7e6", "f3g2", "h1g1", "f7e6"],
+            "material": 200,
+            "eval": -465
+          },
+          "f3e3": {
+            "line": ["e6f5", "g5f6", "f5f6"],
+            "material": 200,
+            "eval": -530
+          },
+          "f5h6": {
+            "line": ["g7h6", "f3f6", "h6g5"],
+            "material": 200,
+            "eval": -531
+          },
+          "f5e7": {
+            "line": ["e6e7"],
+            "material": 200,
+            "eval": -539
+          },
+          "f3h3": {
+            "line": ["e6f5", "h3f5", "c8f5", "g5f6", "g7f6"],
+            "material": 300,
+            "eval": -540
+          },
+          "f3g3": {
+            "line": ["e6f5", "g5f6", "f5f6"],
+            "material": 200,
+            "eval": -547
+          },
+          "f3e2": {
+            "line": ["e6f5", "g5f6", "e4d3", "e2e5", "g7f6", "e5f5", "c8f5"],
+            "material": 300,
+            "eval": -551
+          },
+          "f3d1": {
+            "line": ["e6f5", "g5f6", "f5f6"],
+            "material": 200,
+            "eval": -562
+          },
+          "f5d4": {
+            "line": ["e5d4", "d3e4", "f6e4"],
+            "material": 300,
+            "eval": -595
+          },
+          "f3e4": {
+            "line": ["f6e4"],
+            "material": 500,
+            "eval": -604
+          },
+          "f3g4": {
+            "line": ["f6g4"],
+            "material": 800,
+            "eval": -748
+          },
+          "f5g3": {
+            "line": ["e4f3"],
+            "material": 800,
+            "eval": -758
+          },
+          "g2g4": {
+            "line": ["e4f3"],
+            "material": 900,
+            "eval": -759
+          },
+          "h2h3": {
+            "line": ["e4f3"],
+            "material": 900,
+            "eval": -759
+          },
+          "f5e3": {
+            "line": ["e4f3", "e1c1", "f3g2"],
+            "material": 1000,
+            "eval": -767
+          },
+          "h1g1": {
+            "line": ["e4f3"],
+            "material": 900,
+            "eval": -781
+          },
+          "f5h4": {
+            "line": ["e4f3"],
+            "material": 900,
+            "eval": -785
+          },
+          "e1c1": {
+            "line": ["e4f3"],
+            "material": 900,
+            "eval": -789
+          },
+          "f3h5": {
+            "line": ["f6h5"],
+            "material": 800,
+            "eval": -789
+          },
+          "a2a3": {
+            "line": ["e4f3", "f5g7", "g8g7"],
+            "material": 1000,
+            "eval": -791
+          },
+          "f3f4": {
+            "line": ["e5f4", "f5g7", "g8g7"],
+            "material": 1100,
+            "eval": -797
+          },
+          "g5e3": {
+            "line": ["e4f3", "f5g7", "g8g7"],
+            "material": 1000,
+            "eval": -803
+          },
+          "g5f6": {
+            "line": ["e4f3", "f5h6", "g8h8", "f6g5", "f3g2", "h1g1", "g7h6"],
+            "material": 1000,
+            "eval": -811
+          },
+          "g5d2": {
+            "line": ["e4f3", "f5h4", "f3g2"],
+            "material": 1000,
+            "eval": -811
+          },
+          "a2a4": {
+            "line": ["e4f3", "f5g7", "g8g7"],
+            "material": 1100,
+            "eval": -811
+          },
+          "e1g1": {
+            "line": ["e4f3"],
+            "material": 900,
+            "eval": -812
+          },
+          "a1c1": {
+            "line": ["e4f3"],
+            "material": 900,
+            "eval": -813
+          },
+          "h2h4": {
+            "line": ["e4f3", "f5g7", "g8g7", "e1c1", "f3g2"],
+            "material": 1200,
+            "eval": -816
+          },
+          "e1d2": {
+            "line": ["e4f3", "f5g7", "g8g7"],
+            "material": 1000,
+            "eval": -818
+          },
+          "g2g3": {
+            "line": ["e4f3", "g3g4", "f6g4"],
+            "material": 1000,
+            "eval": -819
+          },
+          "a1b1": {
+            "line": ["e4f3", "f5g7", "g8g7"],
+            "material": 1100,
+            "eval": -823
+          },
+          "h1f1": {
+            "line": ["e4f3", "f5g7", "g8g7"],
+            "material": 1000,
+            "eval": -825
+          },
+          "f5d6": {
+            "line": ["e4f3", "d6c8", "f3g2", "h1g1", "a8c8"],
+            "material": 900,
+            "eval": -827
+          },
+          "g5h4": {
+            "line": ["e4f3"],
+            "material": 900,
+            "eval": -839
+          },
+          "b3b4": {
+            "line": ["e4f3", "f5g7", "g8g7"],
+            "material": 1000,
+            "eval": -840
+          },
+          "a1d1": {
+            "line": ["e4f3", "f5e3", "f3g2"],
+            "material": 1000,
+            "eval": -843
+          },
+          "e1d1": {
+            "line": ["e4f3", "f5g7", "g8g7"],
+            "material": 1100,
+            "eval": -845
+          },
+          "g5h6": {
+            "line": ["e4f3", "h1g1", "e6f5"],
+            "material": 1100,
+            "eval": -849
+          },
+          "e1f1": {
+            "line": ["e4f3"],
+            "material": 900,
+            "eval": -850
+          },
+          "d3d4": {
+            "line": ["e4f3", "f5g7", "g8g7"],
+            "material": 1100,
+            "eval": -851
+          },
+          "g5c1": {
+            "line": ["e4f3", "f5h6", "g7h6"],
+            "material": 1200,
+            "eval": -852
+          },
+          "g5f4": {
+            "line": ["e4f3", "f5h6", "g8h8", "f4d2", "g7h6"],
+            "material": 1200,
+            "eval": -859
+          },
+          "e1e2": {
+            "line": ["e4f3", "g2f3", "e6f5", "g5f6", "f5f6"],
+            "material": 1100,
+            "eval": -934
+          }
+        }
       }
-    },
+    ],
     "game": {
-      "id": "yb9kjyej",
-      "ply": 15,
-      "white": "sakrat",
-      "black": "Masterstheven"
-    }
+      "id": "y95gTxIi",
+      "ply": 28,
+      "white": "MarkusDaUKRobloxKid",
+      "black": "chester-bot"
+    },
+    "rating": 810
   },
   {
-    "id": "d9frshnl-22",
-    "fen": "r1bq1rk1/pp1n1pp1/3b1n1p/3N4/7B/4PN2/PP3PPP/R2QKB1R b KQ - 0 11",
-    "move": "d8a5",
-    "solution": "d5c3",
-    "threat": null,
-    "refutations": {
-      "b2b4": {
-        "line": ["a5d5"],
-        "material": 300,
-        "eval": -378
-      },
-      "d1d2": {
-        "line": ["a5d2", "f3d2", "f6d5"],
-        "material": 300,
-        "eval": -389
-      },
-      "f3d2": {
-        "line": ["a5d5"],
-        "material": 300,
-        "eval": -406
-      },
-      "e1e2": {
-        "line": ["f6d5"],
-        "material": 300,
-        "eval": -525
-      },
-      "d5b4": {
-        "line": ["d6b4"],
-        "material": 300,
-        "eval": -646
+    "id": "BQTklFQS-54",
+    "fen": "3r1r1k/4q1p1/pp5p/2N1np2/5P2/PP2P3/1Q4PP/2R2RK1 b - - 0 27",
+    "move": "e5d3",
+    "steps": [
+      {
+        "solution": "c5d3",
+        "threat": {
+          "line": ["d3b2", "e3e4", "b6c5"],
+          "material": 1200,
+          "eval": -887
+        },
+        "refutations": {
+          "b2e2": {
+            "line": ["d3c1", "f1c1", "b6c5"],
+            "material": 500,
+            "eval": -567
+          },
+          "b2d2": {
+            "line": ["d3c1", "d2c1", "e7c5", "c1c5", "b6c5"],
+            "material": 500,
+            "eval": -574
+          },
+          "b2c2": {
+            "line": ["e7e3", "g1h1", "d3c1", "f1c1", "b6c5", "h2h3", "e3f4"],
+            "material": 700,
+            "eval": -645
+          },
+          "b2b1": {
+            "line": ["e7e3", "g1h1", "d3c1", "b1c1", "e3c5", "c1e1", "c5a3"],
+            "material": 700,
+            "eval": -646
+          },
+          "b2a1": {
+            "line": ["e7e3", "g1h1", "d3c1", "a1c1", "e3c5"],
+            "material": 600,
+            "eval": -648
+          },
+          "c5a4": {
+            "line": ["d3b2", "a4b2", "e7e3", "g1h1", "b6b5", "b2c4", "b5c4"],
+            "material": 900,
+            "eval": -725
+          },
+          "c5e6": {
+            "line": ["d3b2"],
+            "material": 900,
+            "eval": -731
+          },
+          "b2c3": {
+            "line": ["e7e3", "g1h1", "d3f2", "f1f2", "e3c3"],
+            "material": 700,
+            "eval": -732
+          },
+          "b2a2": {
+            "line": ["d3c1", "a2c2", "e7e3"],
+            "material": 600,
+            "eval": -733
+          },
+          "b2e5": {
+            "line": ["d3e5", "f4e5", "b6c5", "f1f3", "e7e5"],
+            "material": 1000,
+            "eval": -748
+          },
+          "b2g7": {
+            "line": ["e7g7"],
+            "material": 800,
+            "eval": -752
+          },
+          "c5a6": {
+            "line": ["d3b2", "f1f3", "b2d3", "c1c4", "e7a3"],
+            "material": 900,
+            "eval": -770
+          },
+          "c1e1": {
+            "line": ["d3b2", "c5a6", "b2d3", "e1e2", "e7a3", "a6c7", "a3b3"],
+            "material": 1000,
+            "eval": -774
+          },
+          "f1f3": {
+            "line": ["d3b2", "c5a6", "b2d3", "c1c4", "e7a3"],
+            "material": 900,
+            "eval": -775
+          },
+          "f1e1": {
+            "line": ["d3b2"],
+            "material": 900,
+            "eval": -783
+          },
+          "c5d7": {
+            "line": ["e7e3", "g1h1", "d3b2"],
+            "material": 1000,
+            "eval": -788
+          },
+          "e3e4": {
+            "line": ["d3b2"],
+            "material": 800,
+            "eval": -795
+          },
+          "c5e4": {
+            "line": ["d3b2", "e4f2", "e7e3"],
+            "material": 1000,
+            "eval": -808
+          },
+          "h2h3": {
+            "line": ["d3b2", "c5a6", "e7e3"],
+            "material": 900,
+            "eval": -816
+          },
+          "b2f2": {
+            "line": ["d3f2", "e3e4", "b6c5", "f1f2", "e7e4"],
+            "material": 1000,
+            "eval": -826
+          },
+          "b3b4": {
+            "line": ["d3b2", "h2h3", "b6c5"],
+            "material": 1200,
+            "eval": -831
+          },
+          "g1h1": {
+            "line": ["d3b2", "e3e4", "b6c5"],
+            "material": 1100,
+            "eval": -832
+          },
+          "h2h4": {
+            "line": ["d3b2", "e3e4", "b6c5"],
+            "material": 1200,
+            "eval": -835
+          },
+          "a3a4": {
+            "line": ["d3b2", "h2h3", "b6c5"],
+            "material": 1200,
+            "eval": -835
+          },
+          "f1f2": {
+            "line": ["d3b2", "f2f3", "b6c5"],
+            "material": 1200,
+            "eval": -838
+          },
+          "c5b7": {
+            "line": ["d3b2", "h2h3", "e7b7"],
+            "material": 1200,
+            "eval": -850
+          },
+          "c1a1": {
+            "line": ["d3b2", "c5e6", "e7e6"],
+            "material": 1200,
+            "eval": -854
+          },
+          "c1b1": {
+            "line": ["e7e3", "g1h1", "d3b2"],
+            "material": 1000,
+            "eval": -859
+          },
+          "g2g3": {
+            "line": ["d3b2", "e3e4", "b6c5"],
+            "material": 1200,
+            "eval": -864
+          },
+          "c1c3": {
+            "line": ["d3b2", "e3e4", "b6c5"],
+            "material": 1200,
+            "eval": -873
+          },
+          "c1c2": {
+            "line": ["e7e3", "g1h1", "d3b2", "c2b2", "b6c5"],
+            "material": 1000,
+            "eval": -883
+          },
+          "c1d1": {
+            "line": ["d3b2", "d1b1", "e7c5", "h2h4", "c5e3"],
+            "material": 1300,
+            "eval": -899
+          },
+          "g2g4": {
+            "line": ["e7e3", "g1h1", "d3b2", "c1e1", "e3c5"],
+            "material": 1300,
+            "eval": -920
+          },
+          "f1d1": {
+            "line": ["d3b2", "d1e1", "b6c5", "c1c2", "b2d3", "e1e2", "d3f4"],
+            "material": 1300,
+            "eval": -957
+          },
+          "c1c4": {
+            "line": ["d3b2", "c4c1", "e7e3", "g1h1", "b6c5"],
+            "material": 1300,
+            "eval": -970
+          },
+          "b2d4": {
+            "line": ["d8d4", "g1h1", "b6c5", "e3d4", "d3c1"],
+            "material": 1200,
+            "eval": -1135
+          },
+          "b2f6": {
+            "line": ["e7e3", "f1f2", "e3f2", "g1h1", "d3e1", "f6g7", "h8g7", "c5e6", "g7f6", "g2g3", "f2g2"],
+            "mate": 6,
+            "eval": -99994
+          }
+        }
       }
-    },
+    ],
     "game": {
-      "id": "d9frshnl",
-      "ply": 22,
-      "white": "cheesedout",
-      "black": "Ben_Dover"
-    }
-  },
-  {
-    "id": "fm1rxbo8-14",
-    "fen": "r1bqk2r/pp2ppbp/2np1np1/2p5/2P1PP2/2NB1N2/PPQP2PP/R1B1K2R b KQkq - 5 7",
-    "move": "c6b4",
-    "solution": "c2b1",
-    "threat": {
-      "line": ["b4c2"],
-      "material": 600,
-      "eval": -491
-    },
-    "refutations": {
-      "h2h3": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -474
-      },
-      "e1g1": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -475
-      },
-      "f4f5": {
-        "line": ["b4c2", "d3c2", "g6f5"],
-        "material": 700,
-        "eval": -479
-      },
-      "a2a4": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -482
-      },
-      "f3g5": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -498
-      },
-      "a2a3": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -500
-      },
-      "a1b1": {
-        "line": ["c8g4", "e1g1", "e8g8", "b1a1", "b4c2"],
-        "material": 600,
-        "eval": -502
-      },
-      "c3b5": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -505
-      },
-      "f3h4": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -507
-      },
-      "c2a4": {
-        "line": ["b7b5", "a4b5", "c8d7", "b5d7", "f6d7"],
-        "material": 500,
-        "eval": -511
-      },
-      "b2b3": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -511
-      },
-      "f3g1": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -512
-      },
-      "h1f1": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -512
-      },
-      "h2h4": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -513
-      },
-      "c3d1": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -513
-      },
-      "c3e2": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -514
-      },
-      "c3a4": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -514
-      },
-      "c3b1": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -521
-      },
-      "g2g3": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -522
-      },
-      "e1f2": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -525
-      },
-      "h1g1": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -525
-      },
-      "c3d5": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -542
-      },
-      "e1e2": {
-        "line": ["f6h5", "g2g3", "b4c2"],
-        "material": 600,
-        "eval": -545
-      },
-      "f3d4": {
-        "line": ["b7b5", "d4b5", "b4c2"],
-        "material": 500,
-        "eval": -552
-      },
-      "e1f1": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -553
-      },
-      "e1d1": {
-        "line": ["b4c2"],
-        "material": 600,
-        "eval": -556
-      },
-      "e4e5": {
-        "line": ["d6e5", "f3e5", "b4c2"],
-        "material": 600,
-        "eval": -570
-      },
-      "g2g4": {
-        "line": ["b4c2", "d3c2", "c8g4"],
-        "material": 700,
-        "eval": -571
-      },
-      "c2b3": {
-        "line": ["b4d3", "e1e2", "d3f4"],
-        "material": 400,
-        "eval": -587
-      },
-      "c2d1": {
-        "line": ["b4d3", "e1e2", "d3f4"],
-        "material": 400,
-        "eval": -591
-      },
-      "f3e5": {
-        "line": ["d6e5", "c2a4", "b7b5", "a4b5", "c8d7", "d3e2", "d7b5"],
-        "material": 1000,
-        "eval": -713
-      },
-      "d3e2": {
-        "line": ["b4c2", "e1d1", "c2a1"],
-        "material": 1400,
-        "eval": -792
-      },
-      "d3f1": {
-        "line": ["b4c2", "e1d1", "c2a1"],
-        "material": 1400,
-        "eval": -822
-      }
-    },
-    "game": {
-      "id": "fm1rxbo8",
-      "ply": 14,
-      "white": "sonie",
-      "black": "kent777"
-    }
-  },
-  {
-    "id": "ug66brmo-54",
-    "fen": "4r1k1/p4ppp/P7/3p2qb/8/1BP5/1Q3PPP/R5K1 b - - 0 27",
-    "move": "h5f3",
-    "solution": "g2g3",
-    "threat": {
-      "line": ["g5g2"],
-      "mate": 1,
-      "eval": -99999
-    },
-    "refutations": {
-      "g2g4": {
-        "line": ["g5g4", "g1f1", "g4g2"],
-        "mate": 2,
-        "eval": -99998
-      },
-      "h2h3": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c3c4": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "h2h4": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "g1h1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b3d1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b3a2": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b3c2": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b3a4": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b3c4": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b3d5": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a1b1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a1c1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a1d1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a1e1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a1f1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a1a2": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a1a3": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a1a4": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a1a5": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b2b1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b2c1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b2a2": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b2c2": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b2d2": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b2e2": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b2a3": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "g1f1": {
-        "line": ["g5g2"],
-        "mate": 1,
-        "eval": -99999
-      }
-    },
-    "game": {
-      "id": "ug66brmo",
+      "id": "BQTklFQS",
       "ply": 54,
-      "white": "Ben_Dover",
-      "black": "cheesedout"
-    }
+      "white": "MegaMaster2022",
+      "black": "yym_chess"
+    },
+    "rating": 820
   },
   {
-    "id": "e2p8lsos-33",
-    "fen": "r4r1k/pp1q1p1p/2pbpp2/8/3P1NQ1/2P5/PP3PPP/R4RK1 w - - 2 17",
-    "move": "f4h5",
-    "solution": "f8g8",
-    "threat": {
-      "line": ["g4g7"],
-      "mate": 1,
-      "eval": -99999
-    },
-    "refutations": {
-      "d6h2": {
-        "line": ["g1h1", "f8g8", "g4h4", "d7d8", "h5f6", "g8g7", "h1h2"],
-        "material": 300,
-        "eval": -515
-      },
-      "d6g3": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "e6e5": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c6c5": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d6c5": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d6a3": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d6f4": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "f6f5": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d7e7": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d7d8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d6e7": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d7c7": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "f8d8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d7c8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "h7h6": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d6c7": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a8d8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "f8b8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "f8c8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a7a5": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a8b8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "f8e8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a7a6": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a8c8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b7b6": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b7b5": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "a8e8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d6b8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d7e8": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d6e5": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d6b4": {
-        "line": ["g4g7"],
-        "mate": 1,
-        "eval": -99999
+    "id": "0v5YUnyK-70",
+    "fen": "8/8/p2p1K2/1ppP4/2P1k3/1P6/P7/8 b - - 1 35",
+    "move": "b5c4",
+    "steps": [
+      {
+        "solution": "b3c4",
+        "threat": {
+          "line": [
+            "c4c3",
+            "a2a3",
+            "c3c2",
+            "b3b4",
+            "c5b4",
+            "a3b4",
+            "c2c1q",
+            "f6e7",
+            "e4d5",
+            "e7d7",
+            "c1g5",
+            "d7c7",
+            "d5c4",
+            "c7d6",
+            "c4b4",
+            "d6e6",
+            "a6a5",
+            "e6f7",
+            "g5f5",
+            "f7g7",
+            "a5a4",
+            "g7h6",
+            "b4b3",
+            "h6g7",
+            "f5f4",
+            "g7g8",
+            "a4a3",
+            "g8h7",
+            "a3a2",
+            "h7g7",
+            "a2a1q",
+            "g7g6",
+            "a1f6",
+            "g6h7",
+            "f6f7",
+            "h7h8",
+            "f4h6"
+          ],
+          "mate": 19,
+          "eval": -99981
+        },
+        "refutations": {
+          "a2a4": {
+            "line": ["c4c3", "f6e6", "c3c2", "a4a5", "c2c1q"],
+            "material": 700,
+            "eval": -1018
+          },
+          "f6e6": {
+            "line": ["c4c3", "e6d6", "c3c2", "d6c6", "c2c1q"],
+            "material": 700,
+            "eval": -1064
+          },
+          "f6f7": {
+            "line": ["c4c3", "f7e7", "c3c2", "e7d6", "c2c1q"],
+            "material": 700,
+            "eval": -1202
+          },
+          "f6g5": {
+            "line": ["c4c3", "g5f6", "c3c2", "f6e7", "c2c1q"],
+            "material": 800,
+            "eval": -1257
+          },
+          "b3b4": {
+            "line": ["c5b4", "f6e6", "c4c3", "e6d6", "c3c2", "d6e7", "c2c1q"],
+            "material": 800,
+            "eval": -1259
+          },
+          "f6g6": {
+            "line": ["c4c3", "g6f6", "c3c2", "f6e7", "c2c1q"],
+            "material": 800,
+            "eval": -1267
+          },
+          "f6e7": {
+            "line": ["c4c3", "e7d6", "c3c2", "d6c6", "c2c1q"],
+            "material": 700,
+            "eval": -1310
+          },
+          "a2a3": {
+            "line": [
+              "c4c3",
+              "b3b4",
+              "c5b4",
+              "a3b4",
+              "c3c2",
+              "b4b5",
+              "a6b5",
+              "f6g5",
+              "e4d5",
+              "g5f4",
+              "c2c1q",
+              "f4f5",
+              "d5d4",
+              "f5f6",
+              "c1f4",
+              "f6e7",
+              "f4f5",
+              "e7e8",
+              "d4d5",
+              "e8d8",
+              "d5c4",
+              "d8c7",
+              "b5b4",
+              "c7c6",
+              "b4b3",
+              "c6b6",
+              "b3b2",
+              "b6b7",
+              "b2b1q",
+              "b7c7",
+              "f5h7",
+              "c7d6",
+              "b1b8",
+              "d6e6",
+              "b8c8",
+              "e6e5",
+              "c8f5",
+              "e5d6",
+              "f5d5"
+            ],
+            "mate": 20,
+            "eval": -99980
+          },
+          "f6g7": {
+            "line": [
+              "c4c3",
+              "g7f7",
+              "c3c2",
+              "f7e7",
+              "c2c1q",
+              "e7d7",
+              "c1h6",
+              "d7c7",
+              "h6d2",
+              "b3b4",
+              "c5b4",
+              "c7d6",
+              "d2c1",
+              "d6e7",
+              "c1g5",
+              "e7e6",
+              "g5h6",
+              "e6e7",
+              "e4d5",
+              "e7f7",
+              "d5e5",
+              "a2a4",
+              "e5d5",
+              "f7g8",
+              "h6f6",
+              "a4a5",
+              "b4b3",
+              "g8h7",
+              "b3b2",
+              "h7g8",
+              "f6e6",
+              "g8h8",
+              "e6h6",
+              "h8g8",
+              "h6f6",
+              "g8h7",
+              "b2b1q",
+              "h7g8",
+              "b1g6"
+            ],
+            "mate": 20,
+            "eval": -99980
+          }
+        }
       }
-    },
+    ],
     "game": {
-      "id": "e2p8lsos",
+      "id": "0v5YUnyK",
+      "ply": 70,
+      "white": "semisolid14",
+      "black": "SilBaum"
+    },
+    "rating": 840
+  },
+  {
+    "id": "bm4S1lca-76",
+    "fen": "2N2k2/5p1p/6p1/1P6/3b4/5PBb/7P/7K b - - 4 38",
+    "move": "f8e8",
+    "steps": [
+      {
+        "solution": "c8d6",
+        "threat": {
+          "line": ["h3c8"],
+          "material": 300,
+          "eval": -573
+        },
+        "refutations": {
+          "b5b6": {
+            "line": ["h3c8", "h1g2", "d4b6"],
+            "material": 400,
+            "eval": -568
+          },
+          "g3f4": {
+            "line": ["h3c8"],
+            "material": 300,
+            "eval": -571
+          },
+          "g3c7": {
+            "line": ["h3c8"],
+            "material": 300,
+            "eval": -579
+          },
+          "g3h4": {
+            "line": ["h3c8"],
+            "material": 300,
+            "eval": -579
+          },
+          "g3b8": {
+            "line": ["h3c8"],
+            "material": 300,
+            "eval": -580
+          },
+          "f3f4": {
+            "line": ["h3c8"],
+            "material": 300,
+            "eval": -591
+          },
+          "g3f2": {
+            "line": ["d4f2"],
+            "material": 300,
+            "eval": -593
+          },
+          "g3e1": {
+            "line": ["e8d7", "e1c3", "d4c5", "c3b4", "c5b4"],
+            "material": 300,
+            "eval": -600
+          },
+          "g3e5": {
+            "line": ["d4e5"],
+            "material": 300,
+            "eval": -600
+          },
+          "g3d6": {
+            "line": ["e8d7", "d6e5", "d4e5"],
+            "material": 300,
+            "eval": -603
+          },
+          "c8a7": {
+            "line": ["d4a7"],
+            "material": 300,
+            "eval": -620
+          },
+          "c8e7": {
+            "line": ["e8e7"],
+            "material": 300,
+            "eval": -624
+          },
+          "c8b6": {
+            "line": ["d4b6", "f3f4", "e8d7", "f4f5", "h3f5"],
+            "material": 400,
+            "eval": -667
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "bm4S1lca",
+      "ply": 76,
+      "white": "Arm_Oz",
+      "black": "landy887"
+    },
+    "rating": 900
+  },
+  {
+    "id": "XDhZh6zJ-30",
+    "fen": "2k3nr/ppp2ppp/1r2p3/q7/1b1P4/2N2P2/PPPQBP1P/2KRR3 b - - 2 15",
+    "move": "b4c3",
+    "steps": [
+      {
+        "solution": "d2c3",
+        "threat": {
+          "line": ["c3b2", "c1b1", "b2c3", "e2b5", "b6b5", "b1c1", "a5a3"],
+          "mate": 4,
+          "eval": -99996
+        },
+        "refutations": {
+          "e2c4": {
+            "line": ["c3b2", "c1b1", "b2c3", "c4b3", "c3d2"],
+            "material": 1000,
+            "eval": -883
+          },
+          "e2b5": {
+            "line": ["c3d2", "d1d2", "a5a2", "c1d1", "b6b5"],
+            "material": 1000,
+            "eval": -959
+          },
+          "a2a4": {
+            "line": ["c3b2", "c1b1", "b2c3", "b1c1", "b6b1", "c1b1", "a5b4", "b1c1", "b4b2"],
+            "mate": 5,
+            "eval": -99995
+          },
+          "d2g5": {
+            "line": ["a5g5", "f3f4", "g5f4", "d1d2", "f4d2", "c1b1", "d2e1", "e2d1", "e1d1"],
+            "mate": 5,
+            "eval": -99995
+          },
+          "d2d3": {
+            "line": ["c3b2", "c1b1", "b2c3", "d3b5", "b6b5", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 5,
+            "eval": -99995
+          },
+          "c1b1": {
+            "line": ["b6b2", "b1c1", "b2a2", "d2c3", "a5c3", "h2h3", "c3c2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "d2f4": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "d2e3": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "d4d5": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "a2a3": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "f3f4": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "e2a6": {
+            "line": ["c3b2", "c1b1", "b2c3", "a6b5", "b6b5", "b1c1", "a5a3"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "e2f1": {
+            "line": ["c3b2", "c1b1", "b2c3", "f1b5", "b6b5", "b1c1", "a5a3"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "e2d3": {
+            "line": ["c3b2", "c1b1", "b2c3", "d3b5", "b6b5", "b1c1", "a5a3"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "h2h4": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "e1h1": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "e1g1": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "e1f1": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "d2h6": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "h2h3": {
+            "line": ["c3b2", "c1b1", "b2c3", "e2b5", "a5b5", "b1c1", "b5b2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "b2b4": {
+            "line": ["a5a3", "c1b1", "a3b2"],
+            "mate": 2,
+            "eval": -99998
+          },
+          "b2b3": {
+            "line": ["a5a3", "c1b1", "a3b2"],
+            "mate": 2,
+            "eval": -99998
+          },
+          "b2c3": {
+            "line": ["a5a3"],
+            "mate": 1,
+            "eval": -99999
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "XDhZh6zJ",
+      "ply": 30,
+      "white": "Pancho11",
+      "black": "S3vas_Blue"
+    },
+    "rating": 930
+  },
+  {
+    "id": "NavZhX6I-63",
+    "fen": "r2r4/R1Rb4/3Pk1p1/1p3p1p/4pB1P/P4P2/1P4P1/6K1 w - - 1 32",
+    "move": "f4g5",
+    "steps": [
+      {
+        "solution": "a8a7",
+        "threat": {
+          "line": ["g5d8"],
+          "material": 200,
+          "eval": -630
+        },
+        "refutations": {
+          "d7e8": {
+            "line": ["g5d8"],
+            "material": 200,
+            "eval": -501
+          },
+          "b5b4": {
+            "line": ["c7d7", "a8a7", "d7a7"],
+            "material": 200,
+            "eval": -511
+          },
+          "e4f3": {
+            "line": ["c7d7", "d8d7", "a7a8"],
+            "material": 100,
+            "eval": -518
+          },
+          "d8e8": {
+            "line": ["c7d7", "a8a7", "d7a7"],
+            "material": 200,
+            "eval": -539
+          },
+          "d8c8": {
+            "line": ["c7d7", "a8a7", "d7a7"],
+            "material": 200,
+            "eval": -545
+          },
+          "e6d6": {
+            "line": ["c7d7", "d8d7", "a7a8"],
+            "material": 200,
+            "eval": -558
+          },
+          "e4e3": {
+            "line": ["c7d7"],
+            "material": 300,
+            "eval": -562
+          },
+          "d8h8": {
+            "line": ["c7d7", "a8a7", "d7a7"],
+            "material": 200,
+            "eval": -572
+          },
+          "d8g8": {
+            "line": ["c7d7", "a8a7", "d7a7"],
+            "material": 200,
+            "eval": -577
+          },
+          "a8c8": {
+            "line": ["g5d8"],
+            "material": 200,
+            "eval": -614
+          },
+          "a8b8": {
+            "line": ["g5d8"],
+            "material": 200,
+            "eval": -617
+          },
+          "f5f4": {
+            "line": ["c7d7", "d8d7", "a7a8", "e4f3", "g5f4"],
+            "material": 300,
+            "eval": -623
+          },
+          "d7c6": {
+            "line": ["g5d8", "a8a7", "c7a7"],
+            "material": 400,
+            "eval": -627
+          },
+          "d8f8": {
+            "line": ["c7d7"],
+            "material": 300,
+            "eval": -645
+          },
+          "d8b8": {
+            "line": ["c7d7"],
+            "material": 300,
+            "eval": -676
+          },
+          "e6d5": {
+            "line": ["g5d8", "a8a7", "c7a7", "d5d6", "f3e4"],
+            "material": 500,
+            "eval": -691
+          },
+          "e6e5": {
+            "line": ["g5d8", "a8a7", "c7a7"],
+            "material": 400,
+            "eval": -692
+          },
+          "e6f7": {
+            "line": ["g5d8", "a8a7", "c7a7"],
+            "material": 500,
+            "eval": -705
+          },
+          "d7c8": {
+            "line": ["a7a8", "e6d6", "a8c8", "d8c8", "c7c8"],
+            "material": 700,
+            "eval": -881
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "NavZhX6I",
+      "ply": 63,
+      "white": "Navalito",
+      "black": "Bernardin92"
+    },
+    "rating": 960
+  },
+  {
+    "id": "i9EH4oOx-16",
+    "fen": "r3kb1r/ppp2ppp/2n1bn2/4p3/4P3/2PB1P2/PP2N1PP/RNBK3R b kq - 3 8",
+    "move": "e8c8",
+    "steps": [
+      {
+        "solution": "d1c2",
+        "threat": {
+          "line": ["d8d3"],
+          "material": 300,
+          "eval": -544
+        },
+        "refutations": {
+          "d1d2": {
+            "line": ["e6c4", "e2d4", "c4d3", "d4c6", "b7c6"],
+            "material": 300,
+            "eval": -488
+          },
+          "e2f4": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -505
+          },
+          "b2b4": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -519
+          },
+          "a2a4": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -524
+          },
+          "b1d2": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -526
+          },
+          "c1g5": {
+            "line": ["d8d3", "d1c2", "d3d6", "b1d2", "a7a5", "b2b4", "a5b4"],
+            "material": 400,
+            "eval": -534
+          },
+          "b2b3": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -535
+          },
+          "h2h4": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -540
+          },
+          "c1f4": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -543
+          },
+          "e2d4": {
+            "line": ["e5d4"],
+            "material": 300,
+            "eval": -544
+          },
+          "h1e1": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -544
+          },
+          "a2a3": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -545
+          },
+          "e2g3": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -545
+          },
+          "c1d2": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -545
+          },
+          "h2h3": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -548
+          },
+          "c1h6": {
+            "line": ["g7h6"],
+            "material": 300,
+            "eval": -551
+          },
+          "h1g1": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -552
+          },
+          "b1a3": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -565
+          },
+          "d1e1": {
+            "line": ["d8d3", "b2b4", "a7a5", "e1f2", "a5b4"],
+            "material": 400,
+            "eval": -568
+          },
+          "c1e3": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -572
+          },
+          "h1f1": {
+            "line": ["e6c4", "d1e1", "d8d3"],
+            "material": 300,
+            "eval": -572
+          },
+          "g2g4": {
+            "line": ["d8d3"],
+            "material": 300,
+            "eval": -577
+          },
+          "e2g1": {
+            "line": ["e6c4", "g1h3", "c4d3"],
+            "material": 300,
+            "eval": -582
+          },
+          "g2g3": {
+            "line": ["d8d3", "b1d2", "a7a5", "d1c2", "d3d8", "b2b4", "a5b4"],
+            "material": 400,
+            "eval": -598
+          },
+          "c3c4": {
+            "line": ["d8d3", "b1d2", "e6c4"],
+            "material": 400,
+            "eval": -605
+          },
+          "f3f4": {
+            "line": ["e6c4", "f4e5", "c6e5", "c1g5", "c4d3"],
+            "material": 300,
+            "eval": -626
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "i9EH4oOx",
+      "ply": 16,
+      "white": "futurfiloharakotobe",
+      "black": "RandommmmmPlayer"
+    },
+    "rating": 1060
+  },
+  {
+    "id": "jdCeDfzN-49",
+    "fen": "6k1/ppp3rp/2n3pQ/4p1N1/8/2Pq4/PP3PPP/5RK1 w - - 2 25",
+    "move": "g5e6",
+    "steps": [
+      {
+        "solution": "g7f7",
+        "threat": {
+          "line": ["h6g7"],
+          "mate": 1,
+          "eval": -99999
+        },
+        "refutations": {
+          "d3d7": {
+            "line": ["h6g7", "d7g7", "e6g7"],
+            "material": 200,
+            "eval": -589
+          },
+          "d3f1": {
+            "line": ["g1f1"],
+            "material": 400,
+            "eval": -652
+          },
+          "g8f7": {
+            "line": ["e6g7", "g6g5", "g7e6", "d3f5", "e6g5"],
+            "material": 600,
+            "eval": -735
+          },
+          "g7e7": {
+            "line": ["h6f8"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "g7d7": {
+            "line": ["h6f8"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e5e4": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "g6g5": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "a7a6": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "b7b6": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "a7a5": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "b7b5": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "c6b4": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "c6d4": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "c6a5": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "c6e7": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "c6b8": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "c6d8": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3b1": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3d1": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3c2": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3d2": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3e2": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3c3": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3e3": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3f3": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3g3": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3h3": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3c4": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3d4": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3e4": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3b5": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3d5": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3f5": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3a6": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3d6": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d3d8": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "g8h8": {
+            "line": ["h6g7"],
+            "mate": 1,
+            "eval": -99999
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "jdCeDfzN",
+      "ply": 49,
+      "white": "Ashraf00340",
+      "black": "patcar4120"
+    },
+    "rating": 1110
+  },
+  {
+    "id": "yVSIKRMf-49",
+    "fen": "2k1b2r/1p3p2/3bp3/3pqp1p/pP1p3r/P2R2N1/1BPQ1PP1/R5K1 w - - 0 25",
+    "move": "b2d4",
+    "steps": [
+      {
+        "solution": "h4d4",
+        "threat": {
+          "line": ["d2c3", "e8c6", "d4e5", "d6e5", "c3e5"],
+          "material": 900,
+          "eval": -754
+        },
+        "refutations": {
+          "d6b4": {
+            "line": ["d4e5", "b4d2", "e5h8", "d2a5", "d3d4", "h4g4", "g3h5"],
+            "material": 500,
+            "eval": -411
+          },
+          "e5f4": {
+            "line": ["d2f4", "h4f4", "d4h8"],
+            "material": 500,
+            "eval": -431
+          },
+          "e8c6": {
+            "line": ["d4e5"],
+            "material": 600,
+            "eval": -495
+          },
+          "c8b8": {
+            "line": ["d4e5"],
+            "material": 600,
+            "eval": -522
+          },
+          "f7f6": {
+            "line": ["d4e5"],
+            "material": 600,
+            "eval": -557
+          },
+          "d6b8": {
+            "line": ["d4e5"],
+            "material": 600,
+            "eval": -560
+          },
+          "e5d4": {
+            "line": ["d3d4", "f5f4", "d4f4", "h4f4", "d2c3", "e8c6", "c3h8"],
+            "material": 700,
+            "eval": -564
+          },
+          "d6c7": {
+            "line": ["d4e5"],
+            "material": 600,
+            "eval": -568
+          },
+          "h4e4": {
+            "line": ["d4e5", "e4e5", "f2f4", "h8g8", "f4e5"],
+            "material": 1000,
+            "eval": -570
+          },
+          "e5e4": {
+            "line": ["g3e4", "f5e4", "d4h8"],
+            "material": 1100,
+            "eval": -624
+          },
+          "e5g3": {
+            "line": ["f2g3", "h4d4", "d3c3", "c8b8", "d2d4"],
+            "material": 800,
+            "eval": -636
+          },
+          "e5g7": {
+            "line": ["d2c3", "e8c6", "d4g7"],
+            "material": 900,
+            "eval": -653
+          },
+          "h8g8": {
+            "line": ["d2c3", "d6c5", "d4e5", "h4c4", "g3h5"],
+            "material": 1000,
+            "eval": -660
+          },
+          "e5e2": {
+            "line": ["d2e2", "h4d4", "g3f5", "e6f5", "d3d4", "h5h4", "d4h4"],
+            "material": 1000,
+            "eval": -695
+          },
+          "h4h1": {
+            "line": ["g1h1", "e8c6", "d4e5"],
+            "material": 1100,
+            "eval": -697
+          },
+          "h8h7": {
+            "line": ["d2c3", "d6c5", "d4e5"],
+            "material": 900,
+            "eval": -697
+          },
+          "e5e1": {
+            "line": ["a1e1"],
+            "material": 900,
+            "eval": -699
+          },
+          "b7b5": {
+            "line": ["d2c3", "d6c7", "d4e5"],
+            "material": 900,
+            "eval": -710
+          },
+          "e8b5": {
+            "line": ["d2c3", "b5c4", "d4e5", "d6e5", "c3e5"],
+            "material": 900,
+            "eval": -713
+          },
+          "h8f8": {
+            "line": ["d2c3", "d6c7", "d4e5"],
+            "material": 900,
+            "eval": -728
+          },
+          "h4g4": {
+            "line": ["d2c3", "e8c6", "d4e5", "d6e5", "c3e5"],
+            "material": 900,
+            "eval": -735
+          },
+          "e8d7": {
+            "line": ["d2c3", "d7c6", "d4e5", "d6e5", "c3e5"],
+            "material": 900,
+            "eval": -735
+          },
+          "b7b6": {
+            "line": ["d2c3", "c8b7", "d4e5", "h4c4", "e5h8", "c4c3", "d3c3"],
+            "material": 1000,
+            "eval": -737
+          },
+          "f5f4": {
+            "line": ["d2c3", "e8c6", "d4e5", "d6e5", "c3e5"],
+            "material": 900,
+            "eval": -738
+          },
+          "h4h2": {
+            "line": ["d2c3", "e8c6", "d4e5"],
+            "material": 900,
+            "eval": -742
+          },
+          "d6e7": {
+            "line": ["d4e5", "f7f6", "d2c3", "h4c4", "e5f6", "f5f4", "f6h8"],
+            "material": 1200,
+            "eval": -745
+          },
+          "h4f4": {
+            "line": ["d2c3", "d6c7", "d4e5", "f4c4", "e5c7"],
+            "material": 1200,
+            "eval": -755
+          },
+          "e5e3": {
+            "line": ["d3e3"],
+            "material": 900,
+            "eval": -756
+          },
+          "h8h6": {
+            "line": ["d4e5", "d6e5", "d2h6", "e5a1", "h6f8", "h4c4", "f8e8"],
+            "material": 900,
+            "eval": -767
+          },
+          "e5f6": {
+            "line": ["d4f6", "h4g4", "f6h8"],
+            "material": 1400,
+            "eval": -787
+          },
+          "c8c7": {
+            "line": ["d2c3", "c7d7", "d4e5"],
+            "material": 900,
+            "eval": -787
+          },
+          "d6f8": {
+            "line": ["d4e5", "h4c4", "e5h8"],
+            "material": 1400,
+            "eval": -801
+          },
+          "d6c5": {
+            "line": ["d4e5", "c5b6", "e5h8", "b6c7", "h8f6", "h4c4", "g3f5"],
+            "material": 1500,
+            "eval": -828
+          },
+          "c8d7": {
+            "line": ["d4e5"],
+            "material": 900,
+            "eval": -833
+          },
+          "h4h3": {
+            "line": ["d2c3", "e8c6", "d4e5", "h5h4", "g2h3", "d6e5", "c3e5"],
+            "material": 1400,
+            "eval": -839
+          },
+          "c8d8": {
+            "line": ["d4e5"],
+            "material": 600,
+            "eval": -840
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "yVSIKRMf",
+      "ply": 49,
+      "white": "jscanonmart",
+      "black": "stamma64"
+    },
+    "rating": 1220
+  },
+  {
+    "id": "tt13BmwM-37",
+    "fen": "r4rk1/1bb1npp1/2p2q1p/p2ppN2/Pp2P3/1B1P2PP/1PP2P1N/R2Q1RK1 w - - 1 19",
+    "move": "h2g4",
+    "steps": [
+      {
+        "solution": "f6e6",
+        "threat": {
+          "line": ["g4f6", "g8h8", "f5e7"],
+          "material": 1200,
+          "eval": -752
+        },
+        "refutations": {
+          "f6g5": {
+            "line": ["h3h4", "g5f5", "e4f5"],
+            "material": 500,
+            "eval": -403
+          },
+          "f6f5": {
+            "line": ["e4f5"],
+            "material": 500,
+            "eval": -407
+          },
+          "e7f5": {
+            "line": ["g4f6", "g7f6", "e4f5"],
+            "material": 600,
+            "eval": -469
+          },
+          "f6d6": {
+            "line": ["f5d6"],
+            "material": 600,
+            "eval": -492
+          },
+          "g8h8": {
+            "line": ["g4f6", "e7f5", "f6d7", "f5d4", "d7f8"],
+            "material": 800,
+            "eval": -514
+          },
+          "f6g6": {
+            "line": ["f5e7", "g8h7", "e7g6"],
+            "material": 900,
+            "eval": -586
+          },
+          "f6h4": {
+            "line": ["f5h4"],
+            "material": 900,
+            "eval": -615
+          },
+          "f8e8": {
+            "line": ["g4f6"],
+            "material": 600,
+            "eval": -621
+          },
+          "a8e8": {
+            "line": ["g4f6"],
+            "material": 600,
+            "eval": -630
+          },
+          "c7d8": {
+            "line": ["g4f6"],
+            "material": 900,
+            "eval": -688
+          },
+          "f8d8": {
+            "line": ["g4f6"],
+            "material": 900,
+            "eval": -719
+          },
+          "e7g6": {
+            "line": ["g4f6", "g7f6", "d1h5", "b7c8", "h5h6", "c8f5", "e4f5"],
+            "material": 700,
+            "eval": -719
+          },
+          "c7d6": {
+            "line": ["g4f6", "g7f6", "f5d6"],
+            "material": 900,
+            "eval": -735
+          },
+          "g8h7": {
+            "line": ["g4f6", "g7f6", "f5e7"],
+            "material": 900,
+            "eval": -736
+          },
+          "f8b8": {
+            "line": ["g4f6", "g8f8", "f6d7", "f8e8", "d7b8"],
+            "material": 1100,
+            "eval": -746
+          },
+          "a8a6": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1200,
+            "eval": -746
+          },
+          "c7b6": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1200,
+            "eval": -746
+          },
+          "d5e4": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1100,
+            "eval": -747
+          },
+          "a8b8": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1200,
+            "eval": -750
+          },
+          "g7g6": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1200,
+            "eval": -754
+          },
+          "a8a7": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1200,
+            "eval": -754
+          },
+          "f8c8": {
+            "line": ["g4f6"],
+            "material": 900,
+            "eval": -755
+          },
+          "a8c8": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1200,
+            "eval": -764
+          },
+          "b7a6": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1200,
+            "eval": -766
+          },
+          "a8d8": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1200,
+            "eval": -768
+          },
+          "c6c5": {
+            "line": ["g4f6", "g8h8", "f5e7", "c5c4", "d3c4"],
+            "material": 1300,
+            "eval": -780
+          },
+          "h6h5": {
+            "line": ["g4f6", "g7f6", "f5e7", "g8g7", "d1h5"],
+            "material": 1000,
+            "eval": -786
+          },
+          "d5d4": {
+            "line": ["g4f6", "g8h8", "f5e7"],
+            "material": 1200,
+            "eval": -789
+          },
+          "b7c8": {
+            "line": ["g4f6", "g7f6", "f5e7"],
+            "material": 900,
+            "eval": -791
+          },
+          "c7b8": {
+            "line": ["g4f6", "g8h8", "f5e7", "b8d6", "e7f5", "b7c8", "f5d6"],
+            "material": 1500,
+            "eval": -880
+          },
+          "g7g5": {
+            "line": ["g4f6", "g8h8", "f5e7", "f8g8", "d1h5", "h8g7", "f6g8"],
+            "material": 1400,
+            "eval": -967
+          },
+          "e7c8": {
+            "line": ["g4f6", "g8h8", "d1g4", "f8g8", "f6g8", "g7g6", "g8h6"],
+            "material": 1500,
+            "eval": -1111
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "tt13BmwM",
+      "ply": 37,
+      "white": "TroutBot",
+      "black": "chester-bot"
+    },
+    "rating": 1240
+  },
+  {
+    "id": "esmSmOuz-32",
+    "fen": "r4rk1/3nppbp/3p1np1/pp4N1/3PNP2/2P2R2/PP1B2PP/R5K1 b - - 1 16",
+    "move": "h7h6",
+    "steps": [
+      {
+        "solution": "e4f6",
+        "threat": {
+          "line": ["h6g5"],
+          "material": 200,
+          "eval": -434
+        },
+        "refutations": {
+          "f4f5": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -363
+          },
+          "e4f2": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -402
+          },
+          "h2h3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -405
+          },
+          "e4g3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -406
+          },
+          "a1e1": {
+            "line": ["h6g5", "e4f6", "e7f6"],
+            "material": 300,
+            "eval": -414
+          },
+          "g1f1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -425
+          },
+          "a1f1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -425
+          },
+          "h2h4": {
+            "line": ["h6g5", "e4g5", "e7e6", "f3h3", "f8e8", "g2g4", "f6g4"],
+            "material": 300,
+            "eval": -427
+          },
+          "f3f2": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -429
+          },
+          "a1d1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -431
+          },
+          "g2g4": {
+            "line": ["h6g5", "e4g5", "f6g4"],
+            "material": 300,
+            "eval": -433
+          },
+          "f3f1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -436
+          },
+          "f3h3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -436
+          },
+          "g1f2": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -439
+          },
+          "a2a4": {
+            "line": ["h6g5", "e4g5", "b5a4", "g2g4", "f8b8", "d2c1", "f6g4"],
+            "material": 400,
+            "eval": -439
+          },
+          "f3g3": {
+            "line": ["h6g5", "e4g5", "f8e8", "f4f5", "g6f5"],
+            "material": 300,
+            "eval": -442
+          },
+          "g1h1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -442
+          },
+          "a1b1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -442
+          },
+          "d2e3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -445
+          },
+          "g2g3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -445
+          },
+          "f3e3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -446
+          },
+          "a2a3": {
+            "line": ["h6g5", "e4g5", "e7e6", "h2h4", "f6g4", "d4d5", "e6d5"],
+            "material": 300,
+            "eval": -446
+          },
+          "f3d3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -446
+          },
+          "a1c1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -447
+          },
+          "d2c1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -448
+          },
+          "d2e1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -451
+          },
+          "b2b3": {
+            "line": ["h6g5", "e4g5", "e7e6", "g2g4", "f6g4", "d4d5", "e6d5"],
+            "material": 400,
+            "eval": -465
+          },
+          "g5e6": {
+            "line": ["f7e6"],
+            "material": 300,
+            "eval": -475
+          },
+          "g5h7": {
+            "line": ["g8h7"],
+            "material": 300,
+            "eval": -481
+          },
+          "d4d5": {
+            "line": ["h6g5", "e4g5", "f6d5"],
+            "material": 300,
+            "eval": -482
+          },
+          "c3c4": {
+            "line": ["h6g5", "e4g5", "b5c4"],
+            "material": 300,
+            "eval": -492
+          },
+          "e4d6": {
+            "line": ["e7d6"],
+            "material": 200,
+            "eval": -502
+          },
+          "b2b4": {
+            "line": ["h6g5", "e4f6", "d7f6", "b4a5", "f6e4", "f3d3", "g5f4"],
+            "material": 300,
+            "eval": -545
+          },
+          "g5h3": {
+            "line": ["f6e4", "d2e1", "f7f5", "h3f2", "d6d5", "a2a4", "b5a4"],
+            "material": 400,
+            "eval": -553
+          },
+          "e4c5": {
+            "line": ["d6c5", "g5h3", "c5d4"],
+            "material": 400,
+            "eval": -570
+          },
+          "g5f7": {
+            "line": ["f6e4", "f7h6", "g7h6"],
+            "material": 400,
+            "eval": -583
+          }
+        },
+        "reply": "d7f6"
+      },
+      {
+        "solution": "g5h3",
+        "threat": {
+          "line": ["h6g5"],
+          "material": 200,
+          "eval": -485
+        },
+        "refutations": {
+          "f4f5": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -403
+          },
+          "a1e1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -411
+          },
+          "f3e3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -447
+          },
+          "a2a4": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -449
+          },
+          "g5f7": {
+            "line": ["g8f7"],
+            "material": 200,
+            "eval": -450
+          },
+          "a1d1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -450
+          },
+          "h2h4": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -454
+          },
+          "g1f1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -456
+          },
+          "a1c1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -456
+          },
+          "f3d3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -459
+          },
+          "d2e3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -459
+          },
+          "f3f1": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -461
+          },
+          "g2g4": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -461
+          },
+          "h2h3": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -465
+          },
+          "a2a3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -467
+          },
+          "g1f2": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -468
+          },
+          "f3f2": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -469
+          },
+          "g2g3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -472
+          },
+          "a1f1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -480
+          },
+          "a1b1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -482
+          },
+          "d2c1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -483
+          },
+          "g1h1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -484
+          },
+          "d2e1": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -485
+          },
+          "g5e6": {
+            "line": ["f7e6"],
+            "material": 300,
+            "eval": -487
+          },
+          "f3g3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -496
+          },
+          "f3h3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -499
+          },
+          "c3c4": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -500
+          },
+          "d4d5": {
+            "line": ["h6g5", "f4g5", "f6d5"],
+            "material": 300,
+            "eval": -511
+          },
+          "b2b3": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -521
+          },
+          "g5h7": {
+            "line": ["g8h7", "a1e1", "e7e6", "d4d5", "f6d5"],
+            "material": 400,
+            "eval": -533
+          },
+          "b2b4": {
+            "line": ["h6g5", "b4a5", "f6e4", "f3d3", "g5f4", "d2f4", "a8a5"],
+            "material": 300,
+            "eval": -557
+          },
+          "g5e4": {
+            "line": ["f6e4"],
+            "material": 300,
+            "eval": -564
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "esmSmOuz",
+      "ply": 32,
+      "white": "madM14mad",
+      "black": "insanreds"
+    },
+    "rating": 1260
+  },
+  {
+    "id": "5Ym7ORuF-101",
+    "fen": "1k6/4NR2/1p1r4/1b3P1p/7r/R7/P7/K7 w - - 0 51",
+    "move": "f7f8",
+    "steps": [
+      {
+        "solution": "b8b7",
+        "threat": null,
+        "refutations": {
+          "d6d8": {
+            "line": ["f8d8"],
+            "material": 500,
+            "eval": -622
+          },
+          "b5e8": {
+            "line": ["f8e8"],
+            "material": 300,
+            "eval": -1005
+          },
+          "b8c7": {
+            "line": ["a3a7"],
+            "mate": 1,
+            "eval": -99999
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "5Ym7ORuF",
+      "ply": 101,
+      "white": "falconengine",
+      "black": "Weiawaga"
+    },
+    "rating": 1280
+  },
+  {
+    "id": "2w6lZ117-33",
+    "fen": "r1b1r1k1/ppp2pp1/7p/3Pn3/3q1P2/3B2N1/2P3PP/R2QR1K1 w - - 1 17",
+    "move": "g1h1",
+    "steps": [
+      {
+        "solution": "d4f4",
+        "threat": {
+          "line": ["d3h7", "g8h7", "d1d4", "c7c5", "d4c3", "c8d7", "f4e5"],
+          "material": 900,
+          "eval": -754
+        },
+        "refutations": {
+          "g8f8": {
+            "line": ["f4e5"],
+            "material": 200,
+            "eval": -354
+          },
+          "d4c3": {
+            "line": ["f4e5"],
+            "material": 200,
+            "eval": -395
+          },
+          "g8h8": {
+            "line": ["f4e5"],
+            "material": 200,
+            "eval": -399
+          },
+          "c8f5": {
+            "line": ["g3f5"],
+            "material": 200,
+            "eval": -409
+          },
+          "g7g6": {
+            "line": ["f4e5"],
+            "material": 200,
+            "eval": -410
+          },
+          "c7c5": {
+            "line": ["f4e5"],
+            "material": 200,
+            "eval": -418
+          },
+          "f7f5": {
+            "line": ["d1h5", "c8d7", "f4e5", "d4d5", "g3f5"],
+            "material": 300,
+            "eval": -501
+          },
+          "d4b2": {
+            "line": ["a1b1", "b2c3", "b1b3", "c3a5", "f4e5"],
+            "material": 300,
+            "eval": -525
+          },
+          "d4b4": {
+            "line": ["f4e5"],
+            "material": 300,
+            "eval": -535
+          },
+          "d4d3": {
+            "line": ["c2d3", "c8g4", "d1d2", "e5f3", "g2f3"],
+            "material": 800,
+            "eval": -602
+          },
+          "e5d3": {
+            "line": ["e1e8", "g8h7", "d1d3", "d4d3", "c2d3"],
+            "material": 500,
+            "eval": -602
+          },
+          "d4c5": {
+            "line": ["f4e5", "c7c6", "e5e6", "c5d5", "c2c4", "d5e6", "e1e6"],
+            "material": 500,
+            "eval": -612
+          },
+          "d4f2": {
+            "line": ["f4e5"],
+            "material": 300,
+            "eval": -613
+          },
+          "d4b6": {
+            "line": ["f4e5"],
+            "material": 300,
+            "eval": -626
+          },
+          "c8d7": {
+            "line": ["d3h7", "g8h7", "d1d4"],
+            "material": 600,
+            "eval": -649
+          },
+          "d4d5": {
+            "line": ["d3h7", "g8h7", "d1d5", "c7c6", "d5d2", "c8e6", "f4e5"],
+            "material": 800,
+            "eval": -653
+          },
+          "c8g4": {
+            "line": ["d3h7", "g8h7", "d1d4"],
+            "material": 600,
+            "eval": -674
+          },
+          "f7f6": {
+            "line": ["d3h7", "g8h7", "d1d4", "c8d7", "f4e5"],
+            "material": 800,
+            "eval": -691
+          },
+          "e8d8": {
+            "line": ["d3h7", "g8h7", "d1d4", "e5g6", "f4f5", "c7c5", "f5g6"],
+            "material": 800,
+            "eval": -701
+          },
+          "d4a1": {
+            "line": ["d1a1", "c7c6", "e1e5"],
+            "material": 700,
+            "eval": -706
+          },
+          "e8f8": {
+            "line": ["d3h7", "g8h7", "d1d4"],
+            "material": 600,
+            "eval": -711
+          },
+          "c8h3": {
+            "line": ["d3h7", "g8h7", "d1d4", "e5d7", "g3h5", "h3g2", "h1g2"],
+            "material": 800,
+            "eval": -719
+          },
+          "e8e6": {
+            "line": ["d3h7", "g8h7", "d1d4", "e5c6", "d4d3", "e6g6", "d5c6"],
+            "material": 800,
+            "eval": -729
+          },
+          "e8e7": {
+            "line": ["d3h7", "g8h7", "d1d4", "c8d7", "f4e5"],
+            "material": 900,
+            "eval": -729
+          },
+          "c8e6": {
+            "line": ["d3h7", "g8h7", "d1d4", "e6d5", "d4d5"],
+            "material": 800,
+            "eval": -735
+          },
+          "c7c6": {
+            "line": ["d3h7", "g8h7", "d1d4", "c6d5", "e1e5"],
+            "material": 800,
+            "eval": -737
+          },
+          "a7a5": {
+            "line": ["d3h7", "g8h7", "d1d4", "a8a6", "f4e5"],
+            "material": 900,
+            "eval": -745
+          },
+          "b7b5": {
+            "line": ["d3h7", "g8h7", "d1d4", "e8d8", "d4e5"],
+            "material": 900,
+            "eval": -745
+          },
+          "d4a4": {
+            "line": ["a1a4", "c8g4", "d3e2", "e5d3", "d1d3"],
+            "material": 1200,
+            "eval": -746
+          },
+          "b7b6": {
+            "line": ["d3h7", "g8h7", "d1d4", "c7c5", "d4c3", "c8b7", "f4e5"],
+            "material": 900,
+            "eval": -762
+          },
+          "a8b8": {
+            "line": ["d3h7", "g8h7", "d1d4", "b7b5", "f4e5"],
+            "material": 900,
+            "eval": -768
+          },
+          "a7a6": {
+            "line": ["d3h7", "g8h7", "d1d4", "c7c5", "d4c3", "e8d8", "c3e5"],
+            "material": 900,
+            "eval": -773
+          },
+          "d4c4": {
+            "line": ["d3c4", "c8g4", "c4e2", "e5d7", "e2g4"],
+            "material": 1200,
+            "eval": -793
+          },
+          "h6h5": {
+            "line": ["d3h7", "g8h7", "d1d4", "c7c6", "f4e5", "c6d5", "g3h5"],
+            "material": 900,
+            "eval": -796
+          },
+          "d4g1": {
+            "line": ["h1g1", "c8g4", "d3e2", "e5d7", "e2g4"],
+            "material": 1200,
+            "eval": -809
+          },
+          "d4e4": {
+            "line": ["e1e4", "a7a5", "f4e5"],
+            "material": 1200,
+            "eval": -841
+          },
+          "d4e3": {
+            "line": ["e1e3", "c8g4", "d1e1", "h6h5", "h2h4", "f7f6", "f4e5"],
+            "material": 1100,
+            "eval": -853
+          },
+          "g7g5": {
+            "line": ["d3h7", "g8h7", "d1d4", "c8d7", "f4e5"],
+            "material": 900,
+            "eval": -854
+          },
+          "e5g6": {
+            "line": ["e1e8", "g6f8", "d3h7", "g8h7", "d1d4", "c8g4", "e8a8"],
+            "material": 1600,
+            "eval": -1296
+          },
+          "e5d7": {
+            "line": ["e1e8", "d7f8", "d3h7", "g8h7", "d1d4", "c8g4", "e8a8"],
+            "material": 1600,
+            "eval": -1314
+          },
+          "e5f3": {
+            "line": ["e1e8"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e5c4": {
+            "line": ["e1e8"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e5g4": {
+            "line": ["e1e8"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e5c6": {
+            "line": ["e1e8"],
+            "mate": 1,
+            "eval": -99999
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "2w6lZ117",
       "ply": 33,
-      "white": "viduccio",
-      "black": "GeorgeWBush"
-    }
+      "white": "mohameden244",
+      "black": "adalar_fayi"
+    },
+    "rating": 1340
   },
   {
-    "id": "muyx35xi-107",
-    "fen": "8/P7/2n5/1Nk5/P1pp4/4K1P1/8/8 w - - 0 54",
-    "move": "b5d4",
-    "solution": "c6a7",
-    "threat": {
-      "line": [
-        "a7a8q",
-        "c6d4",
-        "a8a5",
-        "c5d6",
-        "e3d4",
-        "d6e6",
-        "a5d5",
-        "e6f6",
-        "d5c4",
-        "f6f5",
-        "c4c6",
-        "f5g4",
-        "c6d5",
-        "g4g3",
-        "d5f5",
-        "g3h4",
-        "d4e3",
-        "h4g3",
-        "f5g5",
-        "g3h2",
-        "e3f2",
-        "h2h1",
-        "g5g2"
-      ],
-      "mate": 12,
-      "eval": -99988
-    },
-    "refutations": {
-      "c6d4": {
-        "line": ["a7a8q"],
-        "material": 500,
-        "eval": -1142
-      },
-      "c6e5": {
-        "line": ["a7a8q"],
-        "material": 800,
-        "eval": -1235
-      },
-      "c6e7": {
-        "line": ["a7a8q"],
-        "material": 800,
-        "eval": -1242
-      },
-      "c6b4": {
-        "line": ["d4e6", "c5d6", "a7a8q"],
-        "material": 800,
-        "eval": -1281
-      },
-      "c6a5": {
-        "line": [
-          "a7a8q",
-          "a5b3",
-          "d4b3",
-          "c4b3",
-          "a8e4",
-          "c5d6",
-          "e4b4",
-          "d6d5",
-          "b4b3",
-          "d5e5",
-          "b3b5",
-          "e5e6",
-          "b5c6",
-          "e6f5",
-          "c6d6",
-          "f5g5",
-          "d6e6",
-          "g5h5",
-          "a4a5",
-          "h5g5",
-          "a5a6",
-          "g5h5",
-          "a6a7",
-          "h5g5",
-          "a7a8q",
-          "g5h5",
-          "a8d5"
-        ],
-        "mate": 14,
-        "eval": -99986
-      },
-      "c4c3": {
-        "line": [
-          "a7a8q",
-          "c6d4",
-          "a8a7",
-          "c5c6",
-          "e3d4",
-          "c3c2",
-          "a7c5",
-          "c6d7",
-          "c5c2",
-          "d7e6",
-          "c2c8",
-          "e6f6",
-          "a4a5",
-          "f6f7",
-          "d4e5",
-          "f7g7",
-          "e5f5",
-          "g7f7",
-          "c8d7",
-          "f7g8",
-          "f5f6",
-          "g8f8",
-          "d7f7"
-        ],
-        "mate": 12,
-        "eval": -99988
-      },
-      "c5d6": {
-        "line": [
-          "a7a8q",
-          "c6e5",
-          "a8b8",
-          "d6d7",
-          "b8e5",
-          "c4c3",
-          "e5c5",
-          "d7e8",
-          "c5c3",
-          "e8d8",
-          "c3c4",
-          "d8e7",
-          "a4a5",
-          "e7d8",
-          "a5a6",
-          "d8d7",
-          "a6a7",
-          "d7e7",
-          "a7a8q",
-          "e7f6",
-          "c4e6",
-          "f6g5",
-          "a8a5"
-        ],
-        "mate": 12,
-        "eval": -99988
-      },
-      "c5b6": {
-        "line": [
-          "a7a8q",
-          "c6a7",
-          "a8b8",
-          "b6c5",
-          "b8a7",
-          "c5d6",
-          "a7a6",
-          "d6e7",
-          "a6c4",
-          "e7d7",
-          "a4a5",
-          "d7d8",
-          "a5a6",
-          "d8d7",
-          "a6a7",
-          "d7e7",
-          "a7a8q",
-          "e7f6",
-          "c4e6",
-          "f6g5",
-          "a8a5"
-        ],
-        "mate": 11,
-        "eval": -99989
-      },
-      "c5d5": {
-        "line": [
-          "a7a8q",
-          "d5d6",
-          "a8c6",
-          "d6e7",
-          "c6c4",
-          "e7d7",
-          "a4a5",
-          "d7d8",
-          "a5a6",
-          "d8d7",
-          "a6a7",
-          "d7e7",
-          "a7a8q",
-          "e7f6",
-          "c4e6",
-          "f6g5",
-          "a8a5"
-        ],
-        "mate": 9,
-        "eval": -99991
-      },
-      "c6d8": {
-        "line": [
-          "a7a8q",
-          "d8b7",
-          "a8a6",
-          "b7d8",
-          "a6a5",
-          "c5d6",
-          "a5d8",
-          "d6c5",
-          "d8b8",
-          "c4c3",
-          "b8c7",
-          "c5b4",
-          "c7b6",
-          "b4a4",
-          "b6b3",
-          "a4a5",
-          "b3b5"
-        ],
-        "mate": 9,
-        "eval": -99991
-      },
-      "c5b4": {
-        "line": [
-          "a7a8q",
-          "c6d4",
-          "e3d4",
-          "b4b3",
-          "a8d5",
-          "b3c2",
-          "d5c4",
-          "c2b2",
-          "d4d3",
-          "b2b1",
-          "c4b5",
-          "b1a2",
-          "d3c3",
-          "a2a3",
-          "b5b3"
-        ],
-        "mate": 8,
-        "eval": -99992
-      },
-      "c6b8": {
-        "line": ["a7b8q", "c4c3", "b8c7", "c5b4", "c7b6", "b4a4", "b6b3", "a4a5", "b3b5"],
-        "mate": 5,
-        "eval": -99995
+    "id": "33GMcrJI-58",
+    "fen": "4rBk1/pb2P2p/1p4p1/2p2q2/2Pp3Q/5P1P/PP3P2/4RBK1 b - - 0 29",
+    "move": "f5f3",
+    "steps": [
+      {
+        "solution": "g1h2",
+        "threat": {
+          "line": ["f3h1"],
+          "mate": 1,
+          "eval": -99999
+        },
+        "refutations": {
+          "e1e4": {
+            "line": ["b7e4", "g1h2", "e4c6", "a2a4", "f3h1", "h2g3", "h1f1"],
+            "material": 800,
+            "eval": -818
+          },
+          "h4e4": {
+            "line": ["b7e4", "e1e4", "f3e4", "f8h6", "e4e7"],
+            "material": 1200,
+            "eval": -839
+          },
+          "h4h7": {
+            "line": ["g8h7", "e1e4", "b7e4", "g1h2", "f3f2", "f1g2", "f2g2"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "e1d1": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e1e3": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "h4h5": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "h4d4": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "h4f4": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "f1e2": {
+            "line": ["f3g2"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "h4g3": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "f8h6": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "h4g4": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "h4h6": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "f1d3": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e1e6": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e1e5": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "a2a4": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "a2a3": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "b2b4": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e1e2": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "h4g5": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "b2b3": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "f8g7": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e1a1": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e1c1": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "e1b1": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "h4f6": {
+            "line": ["f3h1"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "f1g2": {
+            "line": ["f3g2"],
+            "mate": 1,
+            "eval": -99999
+          }
+        }
       }
-    },
+    ],
     "game": {
-      "id": "muyx35xi",
-      "ply": 107,
-      "white": "Yeshi",
-      "black": "xiaoqiao"
-    }
+      "id": "33GMcrJI",
+      "ply": 58,
+      "white": "rookielancet",
+      "black": "songsololevel"
+    },
+    "rating": 1360
   },
   {
-    "id": "i2dtvdpj-38",
-    "fen": "r1bqr1k1/1p3p1p/p1pb2p1/8/1P1PB3/P3P3/2QB1PPP/2R2RK1 b - - 0 19",
-    "move": "d8h4",
-    "solution": "f2f4",
-    "threat": {
-      "line": ["h4h2"],
-      "mate": 1,
-      "eval": -99999
-    },
-    "refutations": {
-      "g2g3": {
-        "line": ["h4e4", "c2e4", "e8e4"],
-        "material": 300,
-        "eval": -414
-      },
-      "h2h3": {
-        "line": ["e8e4", "f2f3", "e4e8", "e3e4", "c8h3"],
-        "material": 400,
-        "eval": -419
-      },
-      "f1d1": {
-        "line": ["d6h2", "g1f1", "e8e4"],
-        "material": 400,
-        "eval": -454
-      },
-      "f1e1": {
-        "line": ["d6h2", "g1f1", "e8e4"],
-        "material": 400,
-        "eval": -525
-      },
-      "f2f3": {
-        "line": ["d6h2", "g1h1", "h2g3", "h1g1", "h4h2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "a3a4": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "b4b5": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d4d5": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "g2g4": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d2e1": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "d2c3": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "e4d3": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "e4f3": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "e4d5": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "e4f5": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "e4c6": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "e4g6": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c1a1": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c1b1": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c1d1": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c1e1": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2b1": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2d1": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2a2": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2b2": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2b3": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2c3": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2d3": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2a4": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2c4": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2c5": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "c2c6": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
-      },
-      "g1h1": {
-        "line": ["h4h2"],
-        "mate": 1,
-        "eval": -99999
+    "id": "RvmiA6KW-48",
+    "fen": "4r1k1/pp4bp/5pp1/3pN3/3q1P2/6P1/PP2Q1PK/3R4 b - - 1 24",
+    "move": "d4a4",
+    "steps": [
+      {
+        "solution": "b2b3",
+        "threat": {
+          "line": ["f6e5", "d1d5", "e5f4"],
+          "material": 300,
+          "eval": -578
+        },
+        "refutations": {
+          "e2d3": {
+            "line": ["f6e5"],
+            "material": 200,
+            "eval": -505
+          },
+          "d1d5": {
+            "line": ["f6e5", "f4f5", "g6f5"],
+            "material": 300,
+            "eval": -510
+          },
+          "e2d2": {
+            "line": ["f6e5"],
+            "material": 200,
+            "eval": -515
+          },
+          "e2f3": {
+            "line": ["f6e5"],
+            "material": 200,
+            "eval": -526
+          },
+          "b2b4": {
+            "line": ["f6e5", "d1d5", "e5f4"],
+            "material": 300,
+            "eval": -527
+          },
+          "e2f1": {
+            "line": ["f6e5"],
+            "material": 200,
+            "eval": -541
+          },
+          "h2h3": {
+            "line": ["f6e5", "d1d5", "e5f4"],
+            "material": 300,
+            "eval": -548
+          },
+          "e2g4": {
+            "line": ["f6e5"],
+            "material": 200,
+            "eval": -554
+          },
+          "a2a3": {
+            "line": ["f6e5", "d1d5", "e5f4"],
+            "material": 300,
+            "eval": -562
+          },
+          "d1d3": {
+            "line": ["f6e5", "f4f5", "a4d7", "e2d1", "d5d4", "d3a3", "d7f5"],
+            "material": 400,
+            "eval": -567
+          },
+          "d1c1": {
+            "line": ["f6e5"],
+            "material": 300,
+            "eval": -569
+          },
+          "h2g1": {
+            "line": ["f6e5", "f4e5", "e8e5"],
+            "material": 300,
+            "eval": -572
+          },
+          "d1d2": {
+            "line": ["f6e5", "d2d5", "e5f4"],
+            "material": 300,
+            "eval": -573
+          },
+          "h2h1": {
+            "line": ["f6e5", "d1d5", "e5f4"],
+            "material": 300,
+            "eval": -574
+          },
+          "e2e1": {
+            "line": ["f6e5", "d1d5", "e5f4"],
+            "material": 300,
+            "eval": -580
+          },
+          "d1f1": {
+            "line": ["f6e5"],
+            "material": 300,
+            "eval": -588
+          },
+          "f4f5": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -595
+          },
+          "d1e1": {
+            "line": ["f6e5"],
+            "material": 300,
+            "eval": -601
+          },
+          "d1b1": {
+            "line": ["f6e5"],
+            "material": 300,
+            "eval": -615
+          },
+          "g3g4": {
+            "line": ["a4f4", "h2g1", "e8e5"],
+            "material": 400,
+            "eval": -616
+          },
+          "d1d4": {
+            "line": ["a4d4"],
+            "material": 500,
+            "eval": -616
+          },
+          "d1a1": {
+            "line": ["f6e5"],
+            "material": 300,
+            "eval": -629
+          },
+          "d1h1": {
+            "line": ["f6e5", "b2b3", "e5f4", "b3a4", "f4g3", "h2g3", "e8e2"],
+            "material": 400,
+            "eval": -630
+          },
+          "d1g1": {
+            "line": ["f6e5", "g1d1", "e5f4"],
+            "material": 400,
+            "eval": -633
+          },
+          "e2f2": {
+            "line": ["a4d1"],
+            "material": 500,
+            "eval": -661
+          },
+          "e2e3": {
+            "line": ["a4d1"],
+            "material": 500,
+            "eval": -797
+          },
+          "e2a6": {
+            "line": ["a4a6"],
+            "material": 900,
+            "eval": -809
+          },
+          "e2b5": {
+            "line": ["a4b5"],
+            "material": 900,
+            "eval": -810
+          },
+          "e5g4": {
+            "line": ["e8e2"],
+            "material": 800,
+            "eval": -814
+          },
+          "e2h5": {
+            "line": ["g6h5", "b2b3", "a4a2", "e5f3", "a2b3"],
+            "material": 1100,
+            "eval": -845
+          },
+          "e5g6": {
+            "line": ["e8e2"],
+            "material": 800,
+            "eval": -864
+          },
+          "e5f3": {
+            "line": ["e8e2"],
+            "material": 900,
+            "eval": -866
+          },
+          "e2c4": {
+            "line": ["d5c4", "b2b3", "c4b3", "e5g4", "b3a2"],
+            "material": 1100,
+            "eval": -922
+          },
+          "e2e4": {
+            "line": ["d5e4", "b2b3", "a4a5", "d1f1", "f6e5"],
+            "material": 1200,
+            "eval": -953
+          },
+          "e5d3": {
+            "line": ["e8e2"],
+            "material": 900,
+            "eval": -985
+          },
+          "e5c4": {
+            "line": ["e8e2", "c4e3", "e2e3"],
+            "material": 1200,
+            "eval": -1203
+          },
+          "e5c6": {
+            "line": ["e8e2", "c6e7", "e2e7"],
+            "material": 1200,
+            "eval": -1271
+          },
+          "e5f7": {
+            "line": ["e8e2", "d1g1", "g8f7"],
+            "material": 1200,
+            "eval": -1274
+          },
+          "e5d7": {
+            "line": ["e8e2", "b2b3", "a4d7"],
+            "material": 1200,
+            "eval": -1363
+          },
+          "e2c2": {
+            "line": ["a4c2", "d1f1", "f6e5", "f4f5", "g6f5"],
+            "material": 1300,
+            "eval": -1426
+          }
+        }
       }
-    },
+    ],
     "game": {
-      "id": "i2dtvdpj",
-      "ply": 38,
-      "white": "ThePersianGulf",
-      "black": "arina1999"
-    }
+      "id": "RvmiA6KW",
+      "ply": 48,
+      "white": "schoene_haare",
+      "black": "hamidsup"
+    },
+    "rating": 1420
   },
   {
-    "id": "peeql00e-50",
-    "fen": "1r3r2/1p3pkp/2p2qp1/P7/1Q1P4/4PpP1/5P1P/R4RK1 b - - 0 25",
-    "move": "f6f5",
-    "solution": "g1h1",
-    "threat": {
-      "line": ["f5h3", "b4f8", "g7f8", "e3e4", "h3g2"],
-      "mate": 3,
-      "eval": -99997
-    },
-    "refutations": {
-      "b4f8": {
-        "line": ["b8f8", "g1h1", "f8a8", "e3e4", "f5e4", "h2h3", "e4d4"],
-        "material": 600,
-        "eval": -635
+    "id": "qThw84i6-61",
+    "fen": "3r4/p7/1p2b1k1/2p1Bp2/2p1p1PP/2P5/P3P3/5RK1 w - - 2 31",
+    "move": "g4f5",
+    "steps": [
+      {
+        "solution": "e6f5",
+        "threat": null,
+        "refutations": {
+          "g6f7": {
+            "line": ["f5e6"],
+            "material": 200,
+            "eval": -451
+          },
+          "g6h5": {
+            "line": ["f5e6"],
+            "material": 300,
+            "eval": -607
+          },
+          "g6h6": {
+            "line": ["f5e6"],
+            "material": 300,
+            "eval": -780
+          },
+          "g6h7": {
+            "line": ["f5e6"],
+            "material": 300,
+            "eval": -792
+          }
+        },
+        "reply": "h4h5"
       },
-      "b4b5": {
-        "line": ["f5h3", "b5e5", "g7g8", "e5g7", "g8g7", "g3g4", "h3g2"],
-        "mate": 4,
-        "eval": -99996
-      },
-      "d4d5": {
-        "line": ["f5h3", "b4b2", "f7f6", "b2f6", "g7f6", "d5c6", "h3g2"],
-        "mate": 4,
-        "eval": -99996
-      },
-      "b4b2": {
-        "line": ["f5h3", "d4d5", "f7f6", "b2f6", "g7f6", "d5c6", "h3g2"],
-        "mate": 4,
-        "eval": -99996
-      },
-      "b4c3": {
-        "line": ["f5h3", "d4d5", "f7f6", "c3f6", "g7f6", "d5c6", "h3g2"],
-        "mate": 4,
-        "eval": -99996
-      },
-      "b4c5": {
-        "line": ["f5h3", "c5e5", "g7g8", "e5g7", "g8g7", "g3g4", "h3g2"],
-        "mate": 4,
-        "eval": -99996
-      },
-      "b4d6": {
-        "line": ["f5h3", "d6e5", "g7g8", "e5g7", "g8g7", "g3g4", "h3g2"],
-        "mate": 4,
-        "eval": -99996
-      },
-      "b4e7": {
-        "line": ["f5h3", "e7e5", "g7g8", "e5g7", "g8g7", "g3g4", "h3g2"],
-        "mate": 4,
-        "eval": -99996
-      },
-      "b4b7": {
-        "line": ["f5h3", "b7f7", "f8f7", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "a5a6": {
-        "line": ["f5h3", "b4f8", "b8f8", "a6b7", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "f1b1": {
-        "line": ["f5h3", "b4f8", "b8f8", "b1b7", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "f1d1": {
-        "line": ["f5h3", "b4f8", "g7f8", "d1d3", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "e3e4": {
-        "line": ["f5h3", "b4f8", "g7f8", "a1c1", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "f1c1": {
-        "line": ["f5h3", "b4f8", "g7f8", "d4d5", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "a1b1": {
-        "line": ["f5h3", "b4f8", "g7f8", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "f1e1": {
-        "line": ["f5h3", "b4f8", "g7f8", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "b4a3": {
-        "line": ["f5h3", "a3f8", "g7f8", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "a1a2": {
-        "line": ["f5h3", "b4f8", "b8f8", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "b4b3": {
-        "line": ["f5h3", "b3f7", "f8f7", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "b4c4": {
-        "line": ["f5h3", "c4f7", "f8f7", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "h2h4": {
-        "line": ["f5h3", "b4f8", "g7f8", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "a1a3": {
-        "line": ["f5h3", "b4f8", "b8f8", "g3g4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "a1a4": {
-        "line": ["f5h3", "b4f8", "g7f8", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "a1c1": {
-        "line": ["f5h3", "b4f8", "g7f8", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "h2h3": {
-        "line": ["f5h3", "b4f8", "g7f8", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "a1d1": {
-        "line": ["f5h3", "b4f8", "g7f8", "a5a6", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "a1e1": {
-        "line": ["f5h3", "b4f8", "g7f8", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "b4b1": {
-        "line": ["f5h3", "b1g6", "h7g6", "e3e4", "h3g2"],
-        "mate": 3,
-        "eval": -99997
-      },
-      "g3g4": {
-        "line": ["f5g4", "g1h1", "g4g2"],
-        "mate": 2,
-        "eval": -99998
-      },
-      "b4a4": {
-        "line": ["f5h3", "g3g4", "h3g2"],
-        "mate": 2,
-        "eval": -99998
-      },
-      "b4d2": {
-        "line": ["f5h3", "d2e2", "h3g2"],
-        "mate": 2,
-        "eval": -99998
-      },
-      "b4e1": {
-        "line": ["f5h3", "e1e2", "h3g2"],
-        "mate": 2,
-        "eval": -99998
-      },
-      "b4b6": {
-        "line": ["f5h3", "b6a6", "h3g2"],
-        "mate": 2,
-        "eval": -99998
+      {
+        "solution": "g6g5",
+        "threat": null,
+        "refutations": {
+          "g6h5": {
+            "line": ["f1f5", "h5g4", "f5f4", "g4h5", "g1f2", "d8d5", "f4e4"],
+            "material": 300,
+            "eval": -363
+          },
+          "g6h7": {
+            "line": ["f1f5"],
+            "material": 300,
+            "eval": -531
+          },
+          "g6h6": {
+            "line": ["f1f5"],
+            "material": 300,
+            "eval": -556
+          },
+          "g6f7": {
+            "line": ["f1f5"],
+            "material": 300,
+            "eval": -557
+          }
+        }
       }
-    },
+    ],
     "game": {
-      "id": "peeql00e",
-      "ply": 50,
-      "white": "D31283",
-      "black": "rashit49"
-    }
+      "id": "qThw84i6",
+      "ply": 61,
+      "white": "Mohamedciid",
+      "black": "moisesdog"
+    },
+    "rating": 1460
+  },
+  {
+    "id": "QTvtaPT5-66",
+    "fen": "7r/1p3pk1/2p3p1/p2pN1Pn/6KP/PP1PP3/8/7R b - - 2 33",
+    "move": "h8e8",
+    "steps": [
+      {
+        "solution": "d3d4",
+        "threat": {
+          "line": ["e8e5"],
+          "material": 300,
+          "eval": -555
+        },
+        "refutations": {
+          "e5f3": {
+            "line": ["e8e3"],
+            "material": 100,
+            "eval": -340
+          },
+          "e5d7": {
+            "line": ["e8e3", "h1h3", "e3h3", "g4h3", "h5f4", "h3g3", "f4d3"],
+            "material": 200,
+            "eval": -400
+          },
+          "e5g6": {
+            "line": ["f7g6"],
+            "material": 200,
+            "eval": -469
+          },
+          "g4f3": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -503
+          },
+          "h1g1": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -506
+          },
+          "h1a1": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -524
+          },
+          "h1f1": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -529
+          },
+          "h1b1": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -531
+          },
+          "h1c1": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -531
+          },
+          "h1d1": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -531
+          },
+          "h1e1": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -537
+          },
+          "b3b4": {
+            "line": ["e8e5", "g4f3", "e5f5", "f3g2", "a5b4", "d3d4", "b4a3"],
+            "material": 500,
+            "eval": -538
+          },
+          "a3a4": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -538
+          },
+          "e3e4": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -544
+          },
+          "h1h3": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -556
+          },
+          "h1h2": {
+            "line": ["e8e5"],
+            "material": 300,
+            "eval": -559
+          },
+          "e5c6": {
+            "line": ["e8e3", "h1h3", "f7f5", "g5f6", "h5f6", "g4f4", "e3h3"],
+            "material": 400,
+            "eval": -635
+          },
+          "e5c4": {
+            "line": ["d5c4", "g4f3", "c4b3"],
+            "material": 400,
+            "eval": -671
+          },
+          "g4h3": {
+            "line": ["e8e5", "e3e4", "d5e4", "d3d4", "e5d5", "h3g2", "d5d4"],
+            "material": 500,
+            "eval": -692
+          },
+          "e5f7": {
+            "line": ["e8e3", "h1g1", "g7f7"],
+            "material": 300,
+            "eval": -945
+          }
+        },
+        "reply": "f7f6"
+      },
+      {
+        "solution": "g5f6",
+        "threat": {
+          "line": ["f6e5", "d4e5", "e8e5"],
+          "material": 300,
+          "eval": -583
+        },
+        "refutations": {
+          "e5f3": {
+            "line": ["e8e4", "g4h3", "e4e3", "h3g2", "e3b3"],
+            "material": 200,
+            "eval": -420
+          },
+          "e5d7": {
+            "line": ["e8e3", "g5f6", "h5f6", "d7f6", "g7f6"],
+            "material": 100,
+            "eval": -454
+          },
+          "b3b4": {
+            "line": ["f6e5", "d4e5", "a5a4", "h1c1", "e8e5"],
+            "material": 300,
+            "eval": -534
+          },
+          "h1c1": {
+            "line": ["f6e5", "d4e5", "e8e5"],
+            "material": 300,
+            "eval": -537
+          },
+          "e5g6": {
+            "line": ["g7g6", "g4f3", "f6g5"],
+            "material": 300,
+            "eval": -537
+          },
+          "g4f3": {
+            "line": ["f6e5"],
+            "material": 200,
+            "eval": -539
+          },
+          "h1d1": {
+            "line": ["f6e5"],
+            "material": 300,
+            "eval": -561
+          },
+          "h1b1": {
+            "line": ["f6e5", "d4e5", "e8e5"],
+            "material": 300,
+            "eval": -574
+          },
+          "h1h2": {
+            "line": ["f6e5", "d4e5", "e8e5"],
+            "material": 300,
+            "eval": -575
+          },
+          "h1e1": {
+            "line": ["f6e5", "d4e5", "e8e5"],
+            "material": 300,
+            "eval": -575
+          },
+          "h1g1": {
+            "line": ["f6e5", "d4e5", "e8e5"],
+            "material": 300,
+            "eval": -576
+          },
+          "h1a1": {
+            "line": ["f6e5", "d4e5", "e8e5"],
+            "material": 300,
+            "eval": -578
+          },
+          "h1f1": {
+            "line": ["f6e5", "d4e5", "e8e5"],
+            "material": 300,
+            "eval": -588
+          },
+          "a3a4": {
+            "line": ["f6e5", "d4e5", "e8e5"],
+            "material": 300,
+            "eval": -589
+          },
+          "g4h3": {
+            "line": ["f6e5"],
+            "material": 300,
+            "eval": -591
+          },
+          "h1h3": {
+            "line": ["f6e5", "d4e5", "e8e5"],
+            "material": 300,
+            "eval": -592
+          },
+          "e3e4": {
+            "line": ["f6e5", "e4d5", "e5d4", "g4f3", "c6d5"],
+            "material": 400,
+            "eval": -617
+          },
+          "e5c4": {
+            "line": ["d5c4", "g4f3", "c4b3"],
+            "material": 400,
+            "eval": -623
+          },
+          "e5d3": {
+            "line": ["e8e3", "g5f6", "h5f6", "g4f4", "e3d3", "f4e5", "d3b3"],
+            "material": 500,
+            "eval": -642
+          },
+          "e5f7": {
+            "line": ["e8e3", "g5f6", "g7f7", "h1g1", "e3b3", "g1g2", "f7f6"],
+            "material": 500,
+            "eval": -858
+          },
+          "e5c6": {
+            "line": ["e8e3", "g5f6", "g7f6", "h1f1", "f6g7", "f1g1", "b7c6"],
+            "material": 300,
+            "eval": -1283
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "QTvtaPT5",
+      "ply": 66,
+      "white": "ridin",
+      "black": "Anas_platyrhynchos"
+    },
+    "rating": 1540
+  },
+  {
+    "id": "Ez3NfpxJ-42",
+    "fen": "3r2kr/1p2qpp1/pnpNp1p1/4P1Pn/3P4/1B3Q2/PPP4P/R4RK1 b - - 6 21",
+    "move": "e7g5",
+    "steps": [
+      {
+        "solution": "f3g2",
+        "threat": null,
+        "refutations": {
+          "g1f2": {
+            "line": ["h5f6", "f2e2", "b6c8", "d6f7", "g8f7"],
+            "material": 200,
+            "eval": -363
+          },
+          "g1h1": {
+            "line": ["h5g3", "h1g1", "g3f1"],
+            "material": 200,
+            "eval": -629
+          },
+          "f3g3": {
+            "line": ["h5g3"],
+            "material": 900,
+            "eval": -1121
+          },
+          "f3g4": {
+            "line": [
+              "g5g4",
+              "g1f2",
+              "h5f4",
+              "f2e3",
+              "h8h3",
+              "e3d2",
+              "g4g2",
+              "d2d1",
+              "g2f1",
+              "d1d2",
+              "f1e2",
+              "d2c1",
+              "e2e1"
+            ],
+            "mate": 7,
+            "eval": -99993
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "Ez3NfpxJ",
+      "ply": 42,
+      "white": "deathnotepenalty",
+      "black": "MarkHammerXXL"
+    },
+    "rating": 1610
+  },
+  {
+    "id": "wn7O4QA0-60",
+    "fen": "2r2rk1/1p1R1p1p/4p3/BN1nb3/P3p3/1PP5/1K4P1/5R2 b - - 0 30",
+    "move": "b7b6",
+    "steps": [
+      {
+        "solution": "d7d5",
+        "threat": {
+          "line": ["b6a5", "b2a3", "e4e3", "f1c1", "d5c3"],
+          "material": 400,
+          "eval": -674
+        },
+        "refutations": {
+          "f1f5": {
+            "line": ["e6f5"],
+            "material": 200,
+            "eval": -454
+          },
+          "a5b6": {
+            "line": ["d5b6", "d7d4", "e5d4"],
+            "material": 400,
+            "eval": -500
+          },
+          "f1e1": {
+            "line": ["b6a5", "e1e4", "d5f6", "e4e5", "f6d7"],
+            "material": 400,
+            "eval": -504
+          },
+          "b3b4": {
+            "line": ["b6a5", "b4a5", "d5c3"],
+            "material": 300,
+            "eval": -525
+          },
+          "a5b4": {
+            "line": ["d5b4"],
+            "material": 300,
+            "eval": -536
+          },
+          "b2c1": {
+            "line": ["b6a5"],
+            "material": 300,
+            "eval": -581
+          },
+          "b5d6": {
+            "line": ["b6a5"],
+            "material": 200,
+            "eval": -591
+          },
+          "f1h1": {
+            "line": ["b6a5"],
+            "material": 300,
+            "eval": -599
+          },
+          "f1d1": {
+            "line": ["b6a5", "d7d5", "e6d5"],
+            "material": 400,
+            "eval": -614
+          },
+          "b2b1": {
+            "line": ["b6a5"],
+            "material": 300,
+            "eval": -619
+          },
+          "b5a3": {
+            "line": ["b6a5", "a3c4", "e5c3"],
+            "material": 400,
+            "eval": -620
+          },
+          "b5d4": {
+            "line": ["b6a5", "g2g3", "d5c3"],
+            "material": 400,
+            "eval": -628
+          },
+          "b2c2": {
+            "line": ["b6a5", "c2d1", "d5e3", "d1e1", "e3f1"],
+            "material": 500,
+            "eval": -631
+          },
+          "b2a2": {
+            "line": ["b6a5"],
+            "material": 300,
+            "eval": -632
+          },
+          "b2a3": {
+            "line": ["b6a5", "b3b4", "e5c3", "b4a5", "c3a5"],
+            "material": 400,
+            "eval": -634
+          },
+          "f1f2": {
+            "line": ["b6a5", "f2e2", "d5c3", "b5c3", "e5c3"],
+            "material": 400,
+            "eval": -634
+          },
+          "b5a7": {
+            "line": ["b6a5", "a7c8", "f8c8", "b2b1", "e5c3"],
+            "material": 200,
+            "eval": -640
+          },
+          "b5c7": {
+            "line": ["c8c7", "d7c7", "e5c7"],
+            "material": 300,
+            "eval": -640
+          },
+          "f1f7": {
+            "line": ["f8f7", "d7d5", "f7f2", "b2a3", "e6d5"],
+            "material": 500,
+            "eval": -641
+          },
+          "g2g4": {
+            "line": ["b6a5", "b5d4", "d5c3"],
+            "material": 400,
+            "eval": -642
+          },
+          "g2g3": {
+            "line": ["b6a5", "f1e1", "d5c3"],
+            "material": 400,
+            "eval": -645
+          },
+          "f1c1": {
+            "line": ["b6a5", "b2c2", "d5c3", "b5c3", "e5c3"],
+            "material": 400,
+            "eval": -655
+          },
+          "d7b7": {
+            "line": ["b6a5"],
+            "material": 300,
+            "eval": -660
+          },
+          "f1g1": {
+            "line": ["b6a5"],
+            "material": 300,
+            "eval": -666
+          },
+          "d7a7": {
+            "line": ["b6a5", "f1e1", "e4e3", "a7d7", "d5c3"],
+            "material": 400,
+            "eval": -670
+          },
+          "f1b1": {
+            "line": ["b6a5", "b2c2", "e5c3", "b5c3", "c8c3"],
+            "material": 400,
+            "eval": -676
+          },
+          "f1a1": {
+            "line": ["b6a5", "b5d4", "d5c3", "b2a3", "c3e2", "d4e2", "e5a1"],
+            "material": 600,
+            "eval": -676
+          },
+          "b2a1": {
+            "line": ["b6a5", "a1b2", "d5c3"],
+            "material": 400,
+            "eval": -679
+          },
+          "d7e7": {
+            "line": ["b6a5", "f1f5", "e5g7", "f5d5", "e6d5"],
+            "material": 500,
+            "eval": -679
+          },
+          "d7d6": {
+            "line": ["b6a5", "d6d5", "e6d5"],
+            "material": 500,
+            "eval": -680
+          },
+          "f1f4": {
+            "line": ["e5f4", "a5b6", "d5b6"],
+            "material": 700,
+            "eval": -681
+          },
+          "d7c7": {
+            "line": ["d5c7", "f1e1", "b6a5"],
+            "material": 700,
+            "eval": -723
+          },
+          "f1f3": {
+            "line": ["e4f3", "a5b6", "d5b6", "d7d2", "b6d5", "d2d5", "e6d5"],
+            "material": 800,
+            "eval": -726
+          },
+          "f1f6": {
+            "line": ["d5f6", "a5b6", "f6d7"],
+            "material": 900,
+            "eval": -745
+          },
+          "d7d8": {
+            "line": ["f8d8", "a5b6", "d5b6"],
+            "material": 700,
+            "eval": -746
+          },
+          "d7f7": {
+            "line": ["f8f7", "f1f7", "g8f7", "a5b6", "d5b6"],
+            "material": 600,
+            "eval": -803
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "wn7O4QA0",
+      "ply": 60,
+      "white": "georvil",
+      "black": "GadByGOD"
+    },
+    "rating": 1700
+  },
+  {
+    "id": "wTKxIO6y-55",
+    "fen": "q1k5/5pb1/pp1rp1pp/3P4/4Q3/5N1P/P4PP1/2r1R1K1 w - - 0 28",
+    "move": "e1c1",
+    "steps": [
+      {
+        "solution": "c8b8",
+        "threat": null,
+        "refutations": {
+          "c8d8": {
+            "line": ["e4f4", "a8d5", "f4f7", "d6c6", "f7g8", "d8c7", "g8g7"],
+            "material": 300,
+            "eval": -485
+          },
+          "g7c3": {
+            "line": ["c1c3"],
+            "material": 300,
+            "eval": -619
+          },
+          "a8c6": {
+            "line": ["c1c6"],
+            "material": 900,
+            "eval": -898
+          },
+          "d6c6": {
+            "line": ["c1c6", "a8c6", "d5c6"],
+            "material": 900,
+            "eval": -954
+          },
+          "c8b7": {
+            "line": ["d5e6", "b7a7", "c1c7", "a7b8", "c7c8", "b8c8", "e4a8"],
+            "material": 500,
+            "eval": -1024
+          },
+          "c8d7": {
+            "line": [
+              "d5e6",
+              "d7e7",
+              "e4a8",
+              "g7b2",
+              "c1c7",
+              "e7f6",
+              "a8h8",
+              "f6f5",
+              "g2g4",
+              "f5f4",
+              "c7f7",
+              "f4e4",
+              "h8b2",
+              "d6d1",
+              "g1h2",
+              "e4d5",
+              "b2b3",
+              "d5c5",
+              "b3d1",
+              "c5c6",
+              "d1d7",
+              "c6c5",
+              "d7d4",
+              "c5b5",
+              "e6e7",
+              "a6a5",
+              "e7e8q",
+              "b5a6",
+              "d4d3",
+              "b6b5",
+              "d3b5"
+            ],
+            "mate": 16,
+            "eval": -99984
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "wTKxIO6y",
+      "ply": 55,
+      "white": "zubr74",
+      "black": "SRMKSP"
+    },
+    "rating": 1720
+  },
+  {
+    "id": "VOBnREgy-28",
+    "fen": "r2qk2r/1p2bp1p/p1n1p3/3p3n/Q2P1BR1/2N1PP2/PP3P1P/2R1KB2 b kq - 2 14",
+    "move": "f7f5",
+    "steps": [
+      {
+        "solution": "f4e5",
+        "threat": {
+          "line": ["f5g4", "f4h6", "g4f3"],
+          "material": 600,
+          "eval": -457
+        },
+        "refutations": {
+          "g4g1": {
+            "line": ["h5f4", "e3f4", "e8f7", "f1d3", "b7b5", "a4d1", "c6d4"],
+            "material": 100,
+            "eval": -245
+          },
+          "g4g3": {
+            "line": ["h5f4", "e3f4", "e8f7", "f1d3", "d8b6", "c3e2", "b6b2"],
+            "material": 100,
+            "eval": -253
+          },
+          "g4g2": {
+            "line": ["h5f4", "e3f4", "e8f7", "f1d3", "d8b6", "c3e2", "b6b2"],
+            "material": 100,
+            "eval": -292
+          },
+          "f4h6": {
+            "line": ["f5g4"],
+            "material": 400,
+            "eval": -311
+          },
+          "h2h3": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -353
+          },
+          "f1d3": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -356
+          },
+          "h2h4": {
+            "line": ["f5g4", "f4h6", "e7h4", "a4b3", "h4f2", "e1d2", "g4f3"],
+            "material": 800,
+            "eval": -372
+          },
+          "f1e2": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -378
+          },
+          "f4g3": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -379
+          },
+          "a2a3": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -389
+          },
+          "a4b3": {
+            "line": ["f5g4", "f4g3", "h5g3", "h2g3", "g4f3"],
+            "material": 600,
+            "eval": -396
+          },
+          "a4d1": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -396
+          },
+          "c3e2": {
+            "line": ["f5g4"],
+            "material": 400,
+            "eval": -402
+          },
+          "c3e4": {
+            "line": ["f5g4", "c1c6", "b7c6"],
+            "material": 700,
+            "eval": -402
+          },
+          "f4g5": {
+            "line": ["f5g4", "g5e7", "d8e7"],
+            "material": 400,
+            "eval": -416
+          },
+          "c3b1": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -418
+          },
+          "b2b4": {
+            "line": ["f5g4", "f4h6", "e7b4"],
+            "material": 600,
+            "eval": -418
+          },
+          "g4g7": {
+            "line": ["h5g7"],
+            "material": 500,
+            "eval": -426
+          },
+          "f4c7": {
+            "line": ["d8c7"],
+            "material": 300,
+            "eval": -428
+          },
+          "f4d6": {
+            "line": ["f5g4", "d6e7", "d8e7"],
+            "material": 400,
+            "eval": -428
+          },
+          "e1d1": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -437
+          },
+          "f1g2": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -440
+          },
+          "a4c2": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -443
+          },
+          "c1d1": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -445
+          },
+          "e1d2": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -446
+          },
+          "c3d5": {
+            "line": ["d8d5", "f4e5", "f5g4"],
+            "material": 700,
+            "eval": -447
+          },
+          "g4g5": {
+            "line": ["e7g5"],
+            "material": 500,
+            "eval": -447
+          },
+          "f4b8": {
+            "line": ["f5g4", "b8g3", "g4f3"],
+            "material": 600,
+            "eval": -448
+          },
+          "e3e4": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -448
+          },
+          "c1b1": {
+            "line": ["f5g4", "f4g3", "g4f3"],
+            "material": 600,
+            "eval": -453
+          },
+          "c1a1": {
+            "line": ["f5g4", "f4g3", "g4f3"],
+            "material": 600,
+            "eval": -457
+          },
+          "e1e2": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -458
+          },
+          "f1h3": {
+            "line": ["f5g4", "f4e5", "b7b5", "a4d1", "c6e5"],
+            "material": 700,
+            "eval": -467
+          },
+          "c1c2": {
+            "line": ["f5g4", "f4h6", "g4f3"],
+            "material": 600,
+            "eval": -470
+          },
+          "g4g8": {
+            "line": ["h8g8"],
+            "material": 500,
+            "eval": -472
+          },
+          "c3d1": {
+            "line": ["f5g4"],
+            "material": 500,
+            "eval": -473
+          },
+          "g4g6": {
+            "line": ["h7g6"],
+            "material": 500,
+            "eval": -479
+          },
+          "g4h4": {
+            "line": ["e7h4"],
+            "material": 500,
+            "eval": -489
+          },
+          "b2b3": {
+            "line": ["f5g4", "f4g3", "e8g8", "b3b4", "e7b4", "f1d3", "g4f3"],
+            "material": 700,
+            "eval": -508
+          },
+          "f1c4": {
+            "line": ["d5c4", "f4h6", "f5g4"],
+            "material": 700,
+            "eval": -517
+          },
+          "c3b5": {
+            "line": ["a6b5", "a4b5", "f5g4"],
+            "material": 600,
+            "eval": -533
+          },
+          "f1a6": {
+            "line": ["a8a6", "a4d1", "f5g4"],
+            "material": 700,
+            "eval": -557
+          },
+          "a4c6": {
+            "line": ["b7c6", "f4e5", "f5g4", "e5h8", "g4f3"],
+            "material": 700,
+            "eval": -569
+          },
+          "f1b5": {
+            "line": ["a6b5", "a4b5", "f5g4"],
+            "material": 700,
+            "eval": -580
+          },
+          "a4a3": {
+            "line": ["e7a3", "f4g5", "a3b2", "g5d8", "f5g4", "d8c7", "b2c1"],
+            "material": 1000,
+            "eval": -665
+          },
+          "a4b4": {
+            "line": ["e7b4"],
+            "material": 900,
+            "eval": -670
+          },
+          "a4b5": {
+            "line": ["a6b5", "g4g3", "h5f4", "e3f4", "c6d4"],
+            "material": 1000,
+            "eval": -702
+          },
+          "a4a6": {
+            "line": ["b7a6", "g4g3", "h5f4", "e3f4", "c6d4"],
+            "material": 900,
+            "eval": -706
+          },
+          "a4c4": {
+            "line": ["d5c4", "f1c4", "f5g4"],
+            "material": 1300,
+            "eval": -737
+          },
+          "a4a5": {
+            "line": ["d8a5", "f4h6", "f5g4"],
+            "material": 1300,
+            "eval": -753
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "VOBnREgy",
+      "ply": 28,
+      "white": "tuluaaa",
+      "black": "buhpro"
+    },
+    "rating": 1760
+  },
+  {
+    "id": "oPYyZiFa-12",
+    "fen": "r2qkb1r/pppn1ppp/3p1n2/4P3/5Bb1/3BPN2/PPP2PPP/RN1QK2R b KQkq - 0 6",
+    "move": "d6e5",
+    "steps": [
+      {
+        "solution": "f4g5",
+        "threat": {
+          "line": ["e5f4"],
+          "material": 300,
+          "eval": -522
+        },
+        "refutations": {
+          "f4g3": {
+            "line": ["e5e4", "b1c3", "f8b4", "d3e2", "e4f3"],
+            "material": 200,
+            "eval": -396
+          },
+          "h2h3": {
+            "line": ["g4f3", "d1f3", "e5f4"],
+            "material": 200,
+            "eval": -423
+          },
+          "e1g1": {
+            "line": ["e5f4", "e3f4", "d7c5", "h2h3", "c5d3", "h3g4", "d3f4"],
+            "material": 300,
+            "eval": -434
+          },
+          "d1e2": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -450
+          },
+          "b1c3": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -459
+          },
+          "b1d2": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -464
+          },
+          "d3e2": {
+            "line": ["e5f4"],
+            "material": 200,
+            "eval": -472
+          },
+          "g2g3": {
+            "line": ["e5f4"],
+            "material": 200,
+            "eval": -472
+          },
+          "a2a3": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -474
+          },
+          "f4e5": {
+            "line": ["d7e5"],
+            "material": 200,
+            "eval": -494
+          },
+          "f4h6": {
+            "line": ["g7h6"],
+            "material": 300,
+            "eval": -495
+          },
+          "d1d2": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -498
+          },
+          "e1f1": {
+            "line": ["e5f4", "e3f4", "d7c5", "b1c3", "c5d3"],
+            "material": 500,
+            "eval": -500
+          },
+          "a2a4": {
+            "line": ["e5f4", "h2h3", "g4f3", "d1f3", "f8b4", "b1c3", "f4e3"],
+            "material": 400,
+            "eval": -503
+          },
+          "d3c4": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -504
+          },
+          "d3b5": {
+            "line": ["e5f4", "h2h3", "g4f3", "d1f3", "c7c6", "f3f4", "c6b5"],
+            "material": 500,
+            "eval": -509
+          },
+          "b2b4": {
+            "line": ["e5f4", "e1g1", "f8b4"],
+            "material": 400,
+            "eval": -515
+          },
+          "d3f5": {
+            "line": ["g4f5", "f3e5", "d7e5", "d1d8", "a8d8", "f4e5", "f5c2"],
+            "material": 300,
+            "eval": -519
+          },
+          "e3e4": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -519
+          },
+          "e1e2": {
+            "line": ["e5f4"],
+            "material": 200,
+            "eval": -519
+          },
+          "h1f1": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -523
+          },
+          "c2c4": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -532
+          },
+          "b2b3": {
+            "line": ["e5f4", "e1g1", "f4e3"],
+            "material": 400,
+            "eval": -544
+          },
+          "d3a6": {
+            "line": ["e5f4", "a6b7", "a8b8", "b7c6", "f4e3"],
+            "material": 300,
+            "eval": -545
+          },
+          "h2h4": {
+            "line": ["e5f4", "d1e2", "f4e3"],
+            "material": 400,
+            "eval": -547
+          },
+          "b1a3": {
+            "line": ["f8b4", "c2c3", "b4a3", "f4g5", "a3b2"],
+            "material": 400,
+            "eval": -548
+          },
+          "d3f1": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -549
+          },
+          "e1d2": {
+            "line": ["e5f4"],
+            "material": 200,
+            "eval": -549
+          },
+          "h1g1": {
+            "line": ["e5f4"],
+            "material": 200,
+            "eval": -551
+          },
+          "c2c3": {
+            "line": ["e5f4", "b1d2", "f4e3", "d2c4", "e3f2"],
+            "material": 500,
+            "eval": -554
+          },
+          "d3h7": {
+            "line": ["e5f4", "b1c3", "h8h7"],
+            "material": 500,
+            "eval": -555
+          },
+          "d1c1": {
+            "line": ["e5f4"],
+            "material": 200,
+            "eval": -558
+          },
+          "d3e4": {
+            "line": ["f6e4"],
+            "material": 300,
+            "eval": -572
+          },
+          "f3e5": {
+            "line": ["g4d1", "e5d7", "d8d7"],
+            "material": 800,
+            "eval": -586
+          },
+          "d3g6": {
+            "line": ["h7g6", "f4g5", "e5e4", "b1d2", "e4f3"],
+            "material": 500,
+            "eval": -617
+          },
+          "f3g5": {
+            "line": ["g4d1"],
+            "material": 900,
+            "eval": -671
+          },
+          "f3d2": {
+            "line": ["g4d1"],
+            "material": 900,
+            "eval": -678
+          },
+          "f3h4": {
+            "line": ["g4d1"],
+            "material": 900,
+            "eval": -686
+          },
+          "f3d4": {
+            "line": ["g4d1", "b1c3", "d1h5", "f2f3", "e5f4"],
+            "material": 1200,
+            "eval": -711
+          },
+          "f3g1": {
+            "line": ["g4d1"],
+            "material": 900,
+            "eval": -726
+          }
+        },
+        "reply": "h7h6"
+      },
+      {
+        "solution": "g5f6",
+        "threat": {
+          "line": ["h6g5"],
+          "material": 300,
+          "eval": -492
+        },
+        "refutations": {
+          "g5h4": {
+            "line": ["g7g5", "h4g3", "e5e4", "b1c3", "e4f3"],
+            "material": 200,
+            "eval": -298
+          },
+          "d1d2": {
+            "line": ["h6g5"],
+            "material": 200,
+            "eval": -436
+          },
+          "b1d2": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -446
+          },
+          "g5h6": {
+            "line": ["h8h6"],
+            "material": 200,
+            "eval": -461
+          },
+          "h2h3": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -461
+          },
+          "e1g1": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -462
+          },
+          "d3e2": {
+            "line": ["g4f3", "e2f3", "h6g5"],
+            "material": 300,
+            "eval": -467
+          },
+          "b1c3": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -469
+          },
+          "d1e2": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -477
+          },
+          "h2h4": {
+            "line": ["h6g5", "d3e2", "g4f3", "g2f3", "g5h4"],
+            "material": 400,
+            "eval": -479
+          },
+          "h1f1": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -479
+          },
+          "h1g1": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -482
+          },
+          "a2a4": {
+            "line": ["h6g5", "b1d2", "d8e7", "d3e2", "h8h5", "h2h4", "g5h4"],
+            "material": 400,
+            "eval": -482
+          },
+          "d3b5": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -487
+          },
+          "d3f1": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -487
+          },
+          "d3c4": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -488
+          },
+          "a2a3": {
+            "line": ["h6g5", "b1d2", "g7g6", "d1e2", "d7c5", "d3g6", "f7g6"],
+            "material": 500,
+            "eval": -489
+          },
+          "e1e2": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -490
+          },
+          "c2c3": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -494
+          },
+          "g2g3": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -494
+          },
+          "d3a6": {
+            "line": ["b7a6", "g5f6", "d8f6"],
+            "material": 300,
+            "eval": -502
+          },
+          "g5f4": {
+            "line": ["e5f4"],
+            "material": 300,
+            "eval": -504
+          },
+          "e3e4": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -506
+          },
+          "d1c1": {
+            "line": ["h6g5", "f3g5", "f6d5", "g5f7", "e8f7"],
+            "material": 400,
+            "eval": -513
+          },
+          "c2c4": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -530
+          },
+          "e1f1": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -530
+          },
+          "d3e4": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -531
+          },
+          "e1d2": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -537
+          },
+          "d3g6": {
+            "line": ["f7g6", "g5f6", "d8f6"],
+            "material": 300,
+            "eval": -543
+          },
+          "d3f5": {
+            "line": ["g4f5"],
+            "material": 300,
+            "eval": -544
+          },
+          "b2b3": {
+            "line": ["h6g5"],
+            "material": 300,
+            "eval": -559
+          },
+          "b1a3": {
+            "line": ["h6g5", "d1d2", "e5e4", "f3g5", "e4d3"],
+            "material": 500,
+            "eval": -586
+          },
+          "b2b4": {
+            "line": ["h6g5", "b1d2", "f8b4"],
+            "material": 400,
+            "eval": -587
+          },
+          "f3e5": {
+            "line": ["g4d1", "g5f6", "d8f6", "e5d7", "e8d7"],
+            "material": 800,
+            "eval": -604
+          },
+          "d3h7": {
+            "line": ["h6g5", "h2h3", "h8h7"],
+            "material": 600,
+            "eval": -637
+          },
+          "f3d2": {
+            "line": ["g4d1"],
+            "material": 600,
+            "eval": -665
+          },
+          "f3g1": {
+            "line": ["g4d1"],
+            "material": 900,
+            "eval": -689
+          },
+          "f3h4": {
+            "line": ["g4d1", "g5f6", "d8f6"],
+            "material": 900,
+            "eval": -698
+          },
+          "f3d4": {
+            "line": ["g4d1", "d4e6", "f7e6"],
+            "material": 1200,
+            "eval": -712
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "oPYyZiFa",
+      "ply": 12,
+      "white": "imran_nemesis",
+      "black": "Araws"
+    },
+    "rating": 1850
+  },
+  {
+    "id": "Jg2nBvwd-72",
+    "fen": "8/8/2p5/p1p2p1p/P1Pkp2P/1P4P1/2K2P2/8 b - - 1 36",
+    "move": "e4e3",
+    "steps": [
+      {
+        "solution": "f2f3",
+        "threat": {
+          "line": ["e3f2", "b3b4", "c5b4", "g3g4", "f2f1q", "g4h5", "f1g2", "c2b3", "d4d3", "h5h6", "g2c2"],
+          "mate": 6,
+          "eval": -99994
+        },
+        "refutations": {
+          "f2f4": {
+            "line": ["d4e4", "c2c3", "e4f3", "g3g4", "h5g4", "b3b4", "c5b4"],
+            "material": 200,
+            "eval": -1363
+          },
+          "f2e3": {
+            "line": ["d4e3", "c2c3", "e3f3", "c3d3", "f3g3"],
+            "material": 100,
+            "eval": -1378
+          },
+          "c2d1": {
+            "line": [
+              "e3f2",
+              "d1e2",
+              "d4c3",
+              "e2f1",
+              "c3b4",
+              "f1g2",
+              "f2f1q",
+              "g2f1",
+              "b4b3",
+              "f1g2",
+              "b3a4",
+              "g2f3",
+              "a4b4",
+              "f3e2",
+              "a5a4",
+              "e2e1",
+              "b4b3",
+              "e1f1",
+              "a4a3",
+              "f1g2",
+              "b3b4",
+              "g2f3",
+              "b4c4",
+              "f3f4",
+              "a3a2",
+              "f4g5",
+              "c4d3",
+              "g5f5",
+              "a2a1q",
+              "f5g6",
+              "a1e5",
+              "g3g4",
+              "h5g4",
+              "h4h5",
+              "c5c4",
+              "g6h6",
+              "e5h8",
+              "h6g5",
+              "c4c3",
+              "g5f5",
+              "h8h6",
+              "f5g4",
+              "c3c2",
+              "g4g3",
+              "h6h5",
+              "g3g2",
+              "h5h4",
+              "g2f3",
+              "c2c1q",
+              "f3g2",
+              "c1h1"
+            ],
+            "mate": 26,
+            "eval": -99974
+          },
+          "b3b4": {
+            "line": [
+              "e3f2",
+              "b4b5",
+              "f2f1q",
+              "g3g4",
+              "f1c4",
+              "c2b2",
+              "c4e2",
+              "b2b3",
+              "c5c4",
+              "b3a3",
+              "c4c3",
+              "g4h5",
+              "e2b2"
+            ],
+            "mate": 7,
+            "eval": -99993
+          },
+          "g3g4": {
+            "line": ["e3f2", "b3b4", "c5b4", "g4f5", "f2f1q", "c4c5", "f1g2", "c2d1", "d4d3", "f5f6", "g2d2"],
+            "mate": 6,
+            "eval": -99994
+          },
+          "c2b2": {
+            "line": ["e3f2", "b3b4", "c5b4", "g3g4", "f2f1q", "g4f5", "f1e2", "b2b1", "d4c3", "f5f6", "e2b2"],
+            "mate": 6,
+            "eval": -99994
+          },
+          "c2c1": {
+            "line": ["e3f2", "c1b2", "f2f1q", "b3b4", "c5b4", "g3g4", "f1g2", "b2b3", "d4d3", "g4f5", "g2c2"],
+            "mate": 6,
+            "eval": -99994
+          },
+          "c2b1": {
+            "line": ["e3f2", "b1b2", "f2f1q", "b3b4", "c5b4", "g3g4", "f1g2", "b2b3", "d4d3", "g4f5", "g2c2"],
+            "mate": 6,
+            "eval": -99994
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "Jg2nBvwd",
+      "ply": 72,
+      "white": "WarPanda",
+      "black": "nic2637"
+    },
+    "rating": 1910
+  },
+  {
+    "id": "dsJLWRLP-40",
+    "fen": "Qn3rk1/p5p1/2pq3p/3p4/3P4/6P1/PP3PKP/4RR2 b - - 0 20",
+    "move": "d6d7",
+    "steps": [
+      {
+        "solution": "e1c1",
+        "threat": {
+          "line": ["b8a6", "a8f8", "g8f8", "e1e2", "c6c5", "a2a3", "c5d4"],
+          "material": 500,
+          "eval": -413
+        },
+        "refutations": {
+          "e1e5": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -311
+          },
+          "a2a3": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -324
+          },
+          "e1e3": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -327
+          },
+          "b2b4": {
+            "line": ["b8a6", "a8f8", "g8f8", "e1e3", "a6b4"],
+            "material": 500,
+            "eval": -339
+          },
+          "e1e6": {
+            "line": ["d7e6"],
+            "material": 400,
+            "eval": -343
+          },
+          "h2h4": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -348
+          },
+          "e1e2": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -357
+          },
+          "g2g1": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -357
+          },
+          "e1d1": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -376
+          },
+          "e1b1": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -381
+          },
+          "b2b3": {
+            "line": ["b8a6", "a8f8", "g8f8", "e1e2", "c6c5", "g2g1", "c5d4"],
+            "material": 500,
+            "eval": -384
+          },
+          "h2h3": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -392
+          },
+          "f2f3": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -399
+          },
+          "f1h1": {
+            "line": ["b8a6", "a8f8", "g8f8", "a2a3", "c6c5", "e1e2", "c5d4"],
+            "material": 500,
+            "eval": -404
+          },
+          "f1g1": {
+            "line": ["b8a6", "a8f8", "g8f8", "a2a3", "c6c5", "e1e2", "c5d4"],
+            "material": 500,
+            "eval": -409
+          },
+          "g2h1": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -411
+          },
+          "a2a4": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -411
+          },
+          "e1a1": {
+            "line": ["b8a6", "a8f8", "g8f8"],
+            "material": 400,
+            "eval": -416
+          },
+          "f2f4": {
+            "line": ["b8a6", "a8f8", "g8f8", "f4f5", "f8f7", "b2b4", "a6b4"],
+            "material": 500,
+            "eval": -443
+          },
+          "g3g4": {
+            "line": ["b8a6", "a8f8", "g8f8", "h2h3", "c6c5", "e1e5", "c5d4"],
+            "material": 500,
+            "eval": -467
+          },
+          "a8b8": {
+            "line": ["f8b8"],
+            "material": 600,
+            "eval": -491
+          },
+          "e1e7": {
+            "line": ["d7e7", "b2b4", "e7d7", "b4b5", "c6b5"],
+            "material": 600,
+            "eval": -495
+          },
+          "a8a7": {
+            "line": ["d7a7", "e1d1", "a7a2", "d1e1", "a2b2", "e1e6", "b2d4"],
+            "material": 1100,
+            "eval": -606
+          },
+          "a8b7": {
+            "line": ["d7b7", "f2f4", "c6c5", "b2b4", "c5d4"],
+            "material": 1000,
+            "eval": -641
+          },
+          "e1e8": {
+            "line": ["f8e8", "f1c1", "e8c8", "b2b4", "b8a6", "a8c8", "d7c8"],
+            "material": 900,
+            "eval": -670
+          },
+          "a8c6": {
+            "line": ["b8c6", "f2f3", "c6d4"],
+            "material": 900,
+            "eval": -686
+          },
+          "e1e4": {
+            "line": ["d5e4", "b2b3", "b8a6", "a8f8", "g8f8"],
+            "material": 900,
+            "eval": -730
+          }
+        },
+        "reply": "f8c8"
+      },
+      {
+        "solution": "f1e1",
+        "threat": {
+          "line": ["b8a6", "a8c8", "d7c8"],
+          "material": 400,
+          "eval": -391
+        },
+        "refutations": {
+          "c1e1": {
+            "line": ["c6c5", "e1e7", "d7e7"],
+            "material": 400,
+            "eval": -231
+          },
+          "b2b4": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -291
+          },
+          "a2a3": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -328
+          },
+          "c1c3": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -334
+          },
+          "c1c2": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -342
+          },
+          "h2h4": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -344
+          },
+          "f1d1": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -357
+          },
+          "b2b3": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -369
+          },
+          "c1d1": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -369
+          },
+          "h2h3": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -373
+          },
+          "f1g1": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -375
+          },
+          "f1h1": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -379
+          },
+          "a2a4": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -382
+          },
+          "c1c5": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -382
+          },
+          "c1b1": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -388
+          },
+          "g2g1": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -399
+          },
+          "f2f3": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -405
+          },
+          "f2f4": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -417
+          },
+          "c1a1": {
+            "line": ["c6c5", "b2b4", "b8c6", "a8c6", "d7c6"],
+            "material": 500,
+            "eval": -419
+          },
+          "g2h1": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -428
+          },
+          "g3g4": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -447
+          },
+          "g2f3": {
+            "line": ["b8a6", "a8c8", "d7c8"],
+            "material": 400,
+            "eval": -458
+          },
+          "a8b8": {
+            "line": ["c8b8"],
+            "material": 600,
+            "eval": -505
+          },
+          "a8a7": {
+            "line": ["d7a7"],
+            "material": 800,
+            "eval": -610
+          },
+          "a8b7": {
+            "line": ["d7b7"],
+            "material": 900,
+            "eval": -641
+          },
+          "c1c4": {
+            "line": ["d5c4", "f2f4", "b8a6", "a8c8", "d7c8"],
+            "material": 900,
+            "eval": -680
+          },
+          "a8c6": {
+            "line": ["b8c6"],
+            "material": 800,
+            "eval": -684
+          },
+          "c1c6": {
+            "line": ["b8c6", "a8c6", "d7c6"],
+            "material": 1000,
+            "eval": -758
+          }
+        },
+        "reply": "c6c5"
+      },
+      {
+        "solution": "c1c5",
+        "threat": {
+          "line": ["b8c6", "a8c8", "d7c8", "c1c5", "c8d7", "b2b4", "c6b4"],
+          "material": 400,
+          "eval": -385
+        },
+        "refutations": {
+          "e1e7": {
+            "line": ["d7e7"],
+            "material": 400,
+            "eval": -128
+          },
+          "b2b4": {
+            "line": ["b8c6", "a8c8", "d7c8", "c1c5", "c8d7", "b4b5", "c6d4"],
+            "material": 400,
+            "eval": -319
+          },
+          "h2h3": {
+            "line": ["b8c6", "a8c8", "d7c8", "c1c5", "c8d7", "e1c1", "c6d4"],
+            "material": 400,
+            "eval": -329
+          },
+          "e1e3": {
+            "line": ["b8c6", "a8c8", "d7c8", "c1c5", "c8d7", "e3c3", "c6d4"],
+            "material": 400,
+            "eval": -332
+          },
+          "e1e5": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -333
+          },
+          "a2a3": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -337
+          },
+          "h2h4": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -353
+          },
+          "e1e2": {
+            "line": ["b8c6", "a8c8", "d7c8", "c1c5", "c8d7", "b2b4", "c6b4"],
+            "material": 400,
+            "eval": -365
+          },
+          "b2b3": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -366
+          },
+          "c1c2": {
+            "line": ["b8c6", "a8c8", "d7c8", "c2c5", "c8d7", "b2b4", "c6b4"],
+            "material": 400,
+            "eval": -368
+          },
+          "c1c3": {
+            "line": ["b8c6", "a8c8", "d7c8", "c3c5", "c8d7", "b2b4", "c6b4"],
+            "material": 400,
+            "eval": -371
+          },
+          "a2a4": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -372
+          },
+          "g2g1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -397
+          },
+          "e1e8": {
+            "line": ["c8e8"],
+            "material": 400,
+            "eval": -398
+          },
+          "c1b1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -422
+          },
+          "d4c5": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -423
+          },
+          "g2f1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -428
+          },
+          "g2h1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -449
+          },
+          "e1d1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -452
+          },
+          "f2f3": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -456
+          },
+          "c1d1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -463
+          },
+          "f2f4": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -467
+          },
+          "e1e6": {
+            "line": ["d7e6"],
+            "material": 400,
+            "eval": -481
+          },
+          "e1f1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -494
+          },
+          "c1a1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -495
+          },
+          "e1g1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -496
+          },
+          "e1e4": {
+            "line": ["b8c6", "a8c8", "d7c8", "e4f4", "c5d4"],
+            "material": 500,
+            "eval": -496
+          },
+          "e1h1": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -501
+          },
+          "a8b8": {
+            "line": ["c8b8"],
+            "material": 500,
+            "eval": -502
+          },
+          "g2f3": {
+            "line": ["b8c6", "a8c8", "d7c8"],
+            "material": 300,
+            "eval": -503
+          },
+          "g3g4": {
+            "line": ["b8c6", "a8c8", "d7c8", "c1c3", "c5d4"],
+            "material": 500,
+            "eval": -525
+          },
+          "c1c4": {
+            "line": ["d5c4", "a8e4", "c5d4"],
+            "material": 600,
+            "eval": -565
+          },
+          "a8a7": {
+            "line": ["d7a7", "e1e6", "c5c4", "c1e1", "a7d4"],
+            "material": 900,
+            "eval": -595
+          },
+          "a8d5": {
+            "line": ["d7d5", "f2f3", "d5d4", "g3g4", "d4b2"],
+            "material": 1000,
+            "eval": -664
+          },
+          "a8b7": {
+            "line": ["d7b7", "b2b4", "c5d4", "c1d1", "g8h7", "b4b5", "b7b5"],
+            "material": 1100,
+            "eval": -675
+          },
+          "a8c6": {
+            "line": ["b8c6", "c1c5", "c6d4", "c5c8", "d7c8"],
+            "material": 900,
+            "eval": -689
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "dsJLWRLP",
+      "ply": 40,
+      "white": "thebeasttamer",
+      "black": "KingMoggerthe3rd"
+    },
+    "rating": 2020
+  },
+  {
+    "id": "StlEQ4Zg-153",
+    "fen": "8/8/3p4/8/8/5K1k/6RP/b7 w - - 5 77",
+    "move": "g2g6",
+    "steps": [
+      {
+        "solution": "h3h2",
+        "threat": {
+          "line": ["g6h6"],
+          "mate": 1,
+          "eval": -99999
+        },
+        "refutations": {
+          "h3h4": {
+            "line": ["g6d6"],
+            "material": 100,
+            "eval": -439
+          },
+          "a1g7": {
+            "line": [
+              "g6g7",
+              "h3h4",
+              "f3f4",
+              "h4h5",
+              "f4f5",
+              "h5h6",
+              "g7d7",
+              "d6d5",
+              "d7d5",
+              "h6g7",
+              "h2h4",
+              "g7f8",
+              "d5d1",
+              "f8g7",
+              "h4h5",
+              "g7f8",
+              "d1d2",
+              "f8e8",
+              "h5h6",
+              "e8f7",
+              "d2d1",
+              "f7f8",
+              "f5g6",
+              "f8e7",
+              "h6h7",
+              "e7e6",
+              "h7h8q",
+              "e6e7",
+              "h8d8",
+              "e7e6",
+              "d8e8"
+            ],
+            "mate": 16,
+            "eval": -99984
+          },
+          "a1f6": {
+            "line": ["g6f6", "h3h4", "f6f5", "d6d5", "f5d5", "h4h3", "d5h5"],
+            "mate": 4,
+            "eval": -99996
+          },
+          "a1e5": {
+            "line": ["g6h6"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "a1d4": {
+            "line": ["g6h6"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "d6d5": {
+            "line": ["g6h6"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "a1c3": {
+            "line": ["g6h6"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "a1b2": {
+            "line": ["g6h6"],
+            "mate": 1,
+            "eval": -99999
+          },
+          "a1h8": {
+            "line": ["g6h6"],
+            "mate": 1,
+            "eval": -99999
+          }
+        },
+        "reply": "g6d6"
+      },
+      {
+        "solution": "a1e5",
+        "threat": {
+          "line": [
+            "d6d2",
+            "h2h3",
+            "d2d1",
+            "h3h4",
+            "d1a1",
+            "h4g5",
+            "a1e1",
+            "g5f5",
+            "e1e4",
+            "f5g5",
+            "e4e5",
+            "g5g6",
+            "f3g4",
+            "g6h6",
+            "e5e1",
+            "h6g7",
+            "g4g5",
+            "g7f7",
+            "e1e4",
+            "f7g7",
+            "g5f5",
+            "g7f7",
+            "e4e2",
+            "f7g7",
+            "f5g5",
+            "g7f7",
+            "e2e1",
+            "f7g7",
+            "e1f1",
+            "g7h7",
+            "f1f7",
+            "h7h8",
+            "g5h6",
+            "h8g8",
+            "h6g6",
+            "g8h8",
+            "f7f8"
+          ],
+          "mate": 19,
+          "eval": -99981
+        },
+        "refutations": {
+          "a1c3": {
+            "line": [
+              "f3f2",
+              "c3e1",
+              "f2e1",
+              "h2g3",
+              "e1e2",
+              "g3g4",
+              "e2f2",
+              "g4f4",
+              "d6d1",
+              "f4e4",
+              "d1d2",
+              "e4f4",
+              "d2e2",
+              "f4g4",
+              "e2e4",
+              "g4g5",
+              "f2f3",
+              "g5f5",
+              "e4e1",
+              "f5g5",
+              "e1e5",
+              "g5h6",
+              "f3f4",
+              "h6g6",
+              "e5e1",
+              "g6h5",
+              "e1f1",
+              "h5g6",
+              "f4g4",
+              "g6h7",
+              "g4h5",
+              "h7g7",
+              "h5g5",
+              "g7h7",
+              "f1f7",
+              "h7h8",
+              "g5h6",
+              "h8g8",
+              "h6g6",
+              "g8h8",
+              "f7f8"
+            ],
+            "mate": 21,
+            "eval": -99979
+          },
+          "a1g7": {
+            "line": [
+              "d6d2",
+              "h2h3",
+              "d2d7",
+              "g7h6",
+              "d7h7",
+              "h3h4",
+              "h7h6",
+              "h4g5",
+              "h6e6",
+              "g5f5",
+              "e6e1",
+              "f5g5",
+              "e1e5",
+              "g5h6",
+              "f3f4",
+              "h6g6",
+              "f4g4",
+              "g6h6",
+              "e5e1",
+              "h6g6",
+              "e1f1",
+              "g6h6",
+              "g4f5",
+              "h6g7",
+              "f5g5",
+              "g7h7",
+              "g5f6",
+              "h7h8",
+              "f6f7",
+              "h8h7",
+              "f1h1"
+            ],
+            "mate": 16,
+            "eval": -99984
+          },
+          "a1b2": {
+            "line": ["d6d2", "h2h1", "d2b2", "h1g1", "b2b1", "g1h2", "b1d1", "h2h3", "d1h1"],
+            "mate": 5,
+            "eval": -99995
+          },
+          "a1d4": {
+            "line": ["d6d4", "h2g1", "d4h4", "g1f1", "h4h1"],
+            "mate": 3,
+            "eval": -99997
+          },
+          "a1f6": {
+            "line": ["d6f6", "h2g1", "f3g3", "g1h1", "f6f1"],
+            "mate": 3,
+            "eval": -99997
+          },
+          "h2g1": {
+            "line": ["d6d1", "g1h2", "d1a1", "h2h3", "a1h1"],
+            "mate": 3,
+            "eval": -99997
+          },
+          "h2h1": {
+            "line": ["d6d1", "h1h2", "d1a1", "h2h3", "a1h1"],
+            "mate": 3,
+            "eval": -99997
+          },
+          "a1h8": {
+            "line": ["d6h6", "h2g1", "h6h8", "g1f1", "h8h1"],
+            "mate": 3,
+            "eval": -99997
+          },
+          "h2h3": {
+            "line": ["d6h6"],
+            "mate": 1,
+            "eval": -99999
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "StlEQ4Zg",
+      "ply": 153,
+      "white": "SilverPike",
+      "black": "TucuEngine"
+    },
+    "rating": 2090
+  },
+  {
+    "id": "ZENlaGaE-46",
+    "fen": "r1b1r1k1/pp3p1p/3q2p1/3p1nP1/2PNp3/8/PP5P/R1BQ1BRK b - - 1 23",
+    "move": "d5c4",
+    "steps": [
+      {
+        "solution": "d1a4",
+        "threat": {
+          "line": ["d6d4", "d1d4", "f5d4", "c1d2", "d4f3", "d2e3", "f3g1"],
+          "material": 500,
+          "eval": -500
+        },
+        "refutations": {
+          "b2b3": {
+            "line": ["d6d4", "d1d4", "f5d4"],
+            "material": 300,
+            "eval": -455
+          },
+          "f1c4": {
+            "line": ["d6d4", "d1d4", "f5d4"],
+            "material": 200,
+            "eval": -457
+          },
+          "a2a4": {
+            "line": ["d6d4", "d1d4", "f5d4"],
+            "material": 300,
+            "eval": -459
+          },
+          "c1d2": {
+            "line": ["d6d4", "d2c3", "d4c5", "b2b4", "c4b3"],
+            "material": 400,
+            "eval": -460
+          },
+          "b2b4": {
+            "line": ["d6d4", "d1d4", "f5d4"],
+            "material": 300,
+            "eval": -460
+          },
+          "g1g2": {
+            "line": ["d6d4", "d1d4", "f5d4"],
+            "material": 300,
+            "eval": -475
+          },
+          "a1b1": {
+            "line": ["d6d4", "d1d4", "f5d4"],
+            "material": 300,
+            "eval": -476
+          },
+          "f1h3": {
+            "line": ["f5d4"],
+            "material": 300,
+            "eval": -478
+          },
+          "d4f5": {
+            "line": ["d6d1", "f5h6", "g8g7", "f1h3", "d1d5", "c1e3", "c8h3"],
+            "material": 900,
+            "eval": -499
+          },
+          "h2h3": {
+            "line": ["d6d4", "d1d4", "f5d4", "c1d2", "d4f3", "d2e3", "f3g1"],
+            "material": 500,
+            "eval": -504
+          },
+          "f1g2": {
+            "line": ["d6d4", "d1d4", "f5d4"],
+            "material": 300,
+            "eval": -507
+          },
+          "d1e2": {
+            "line": ["f5d4"],
+            "material": 300,
+            "eval": -516
+          },
+          "d1d2": {
+            "line": ["f5d4"],
+            "material": 300,
+            "eval": -521
+          },
+          "f1e2": {
+            "line": ["d6d4", "c1d2", "d4b2"],
+            "material": 400,
+            "eval": -521
+          },
+          "a2a3": {
+            "line": ["d6d4", "d1d4", "f5d4", "f1c4", "d4c2", "c1d2", "c2a1"],
+            "material": 400,
+            "eval": -533
+          },
+          "d1c2": {
+            "line": ["d6d4", "c2c4", "e4e3", "c4d4", "f5d4", "c1e3", "e8e3"],
+            "material": 400,
+            "eval": -541
+          },
+          "c1f4": {
+            "line": ["d6f4"],
+            "material": 300,
+            "eval": -545
+          },
+          "g1g4": {
+            "line": ["d6d4"],
+            "material": 300,
+            "eval": -548
+          },
+          "d1e1": {
+            "line": ["d6d4"],
+            "material": 300,
+            "eval": -551
+          },
+          "g1g3": {
+            "line": ["f5g3", "h2g3", "e4e3", "f1c4", "c8e6", "c1e3", "e6c4"],
+            "material": 300,
+            "eval": -555
+          },
+          "d1g4": {
+            "line": ["d6d4"],
+            "material": 300,
+            "eval": -585
+          },
+          "h2h4": {
+            "line": ["e4e3", "c1e3", "f5e3", "d4f5", "e3f5", "d1d6", "f5d6"],
+            "material": 500,
+            "eval": -587
+          },
+          "c1e3": {
+            "line": ["f5e3"],
+            "material": 300,
+            "eval": -634
+          },
+          "d1h5": {
+            "line": ["g6h5", "d4f5", "c8f5", "c1e3", "f5g4", "g1g4", "h5g4"],
+            "material": 1100,
+            "eval": -702
+          },
+          "h1g2": {
+            "line": ["e4e3", "g2h1", "f5d4", "c1e3", "e8e3"],
+            "material": 500,
+            "eval": -709
+          },
+          "d4e2": {
+            "line": ["d6d1"],
+            "material": 900,
+            "eval": -733
+          },
+          "d1b3": {
+            "line": ["c4b3", "d4f5", "g6f5", "g5g6", "f7g6"],
+            "material": 1000,
+            "eval": -751
+          },
+          "d4e6": {
+            "line": ["d6d1", "e6f4", "e4e3", "c1e3", "d1d6", "e3c5", "d6f4"],
+            "material": 1100,
+            "eval": -808
+          },
+          "d4b5": {
+            "line": ["d6d1", "c1d2", "d1d2"],
+            "material": 1200,
+            "eval": -847
+          },
+          "f1d3": {
+            "line": ["e4d3"],
+            "material": 300,
+            "eval": -864
+          },
+          "d4c2": {
+            "line": ["d6d1", "c2e3", "f5e3", "c1e3", "d1f3", "g1g2", "f3e3"],
+            "material": 1200,
+            "eval": -867
+          },
+          "d1f3": {
+            "line": ["e4f3"],
+            "material": 800,
+            "eval": -887
+          },
+          "d4c6": {
+            "line": ["d6d1", "c1d2", "d1d2", "f1c4", "b7c6"],
+            "material": 1400,
+            "eval": -910
+          },
+          "d4b3": {
+            "line": ["d6d1", "c1f4", "d1f3", "f1g2", "f3f4"],
+            "material": 1200,
+            "eval": -912
+          },
+          "d1d3": {
+            "line": ["e4d3"],
+            "material": 900,
+            "eval": -942
+          },
+          "d4f3": {
+            "line": ["d6d1", "f3e5", "e8e5", "c1f4", "d1f3", "g1g2", "f3f4"],
+            "material": 1500,
+            "eval": -944
+          }
+        },
+        "reply": "c8d7"
+      },
+      {
+        "solution": "d4f5",
+        "threat": {
+          "line": ["d7a4", "d4f5", "g6f5"],
+          "material": 900,
+          "eval": -810
+        },
+        "refutations": {
+          "d4b5": {
+            "line": ["d6c6", "a4c4", "e4e3", "c4c6", "d7c6", "f1g2", "c6b5"],
+            "material": 200,
+            "eval": -492
+          },
+          "a4c4": {
+            "line": ["d6d4", "c4d4", "f5d4", "c1d2", "d4f3", "d2e3", "f3g1"],
+            "material": 400,
+            "eval": -517
+          },
+          "c1f4": {
+            "line": ["d6d4"],
+            "material": 300,
+            "eval": -571
+          },
+          "a4c2": {
+            "line": ["d6d4"],
+            "material": 200,
+            "eval": -577
+          },
+          "a4d1": {
+            "line": ["e4e3", "d4f5", "d6d1"],
+            "material": 600,
+            "eval": -624
+          },
+          "a4a5": {
+            "line": ["d6d4"],
+            "material": 300,
+            "eval": -656
+          },
+          "a4a3": {
+            "line": ["d6d4"],
+            "material": 300,
+            "eval": -656
+          },
+          "a4d7": {
+            "line": ["d6d7", "d4f5", "d7f5", "f1g2", "e4e3", "c1e3", "e8e3"],
+            "material": 800,
+            "eval": -668
+          },
+          "a4a7": {
+            "line": ["a8a7", "d4f5", "g6f5", "c1e3", "f5f4", "f1c4", "f4e3"],
+            "material": 1000,
+            "eval": -702
+          },
+          "a4b5": {
+            "line": ["d7b5"],
+            "material": 600,
+            "eval": -736
+          },
+          "f1e2": {
+            "line": ["f5d4", "a4a3", "d6a3", "b2a3", "d4e2"],
+            "material": 600,
+            "eval": -749
+          },
+          "b2b3": {
+            "line": ["d6d4", "a4d7", "d4d7"],
+            "material": 900,
+            "eval": -758
+          },
+          "a4a6": {
+            "line": ["d6a6", "d4f5", "d7f5"],
+            "material": 900,
+            "eval": -764
+          },
+          "f1h3": {
+            "line": ["d7a4", "d4f5", "g6f5"],
+            "material": 900,
+            "eval": -774
+          },
+          "g1g2": {
+            "line": ["d7a4", "d4f5", "g6f5"],
+            "material": 900,
+            "eval": -778
+          },
+          "f1c4": {
+            "line": ["d7a4", "d4f5", "g6f5"],
+            "material": 800,
+            "eval": -779
+          },
+          "c1e3": {
+            "line": ["f5e3", "a4a5", "d6d4"],
+            "material": 600,
+            "eval": -782
+          },
+          "a4b3": {
+            "line": ["c4b3", "d4f5", "g6f5", "c1e3", "f5f4", "f1e2", "f4e3"],
+            "material": 1200,
+            "eval": -799
+          },
+          "a1b1": {
+            "line": ["d7a4", "d4f5", "g6f5"],
+            "material": 900,
+            "eval": -808
+          },
+          "d4e2": {
+            "line": ["d7a4", "b2b4", "d6b4"],
+            "material": 1000,
+            "eval": -815
+          },
+          "a4b4": {
+            "line": ["d6b4", "d4f5", "d7f5", "c1e3", "a8d8", "g1g3", "b4b2"],
+            "material": 1000,
+            "eval": -817
+          },
+          "b2b4": {
+            "line": ["d7a4", "d4f5", "g6f5"],
+            "material": 900,
+            "eval": -821
+          },
+          "c1d2": {
+            "line": ["d7a4", "d4f5", "g6f5", "g5g6", "h7g6"],
+            "material": 1000,
+            "eval": -821
+          },
+          "f1g2": {
+            "line": ["d7a4", "d4f5", "g6f5", "g5g6", "h7g6"],
+            "material": 1000,
+            "eval": -829
+          },
+          "d4c2": {
+            "line": ["d7a4"],
+            "material": 900,
+            "eval": -829
+          },
+          "a2a3": {
+            "line": ["d7a4", "d4f5", "g6f5"],
+            "material": 900,
+            "eval": -831
+          },
+          "a4c6": {
+            "line": ["d7c6", "d4c6", "d6c6"],
+            "material": 900,
+            "eval": -835
+          },
+          "d4c6": {
+            "line": ["d7c6", "b2b3", "c6a4"],
+            "material": 900,
+            "eval": -836
+          },
+          "h2h3": {
+            "line": ["d7a4", "d4f5", "g6f5", "g5g6", "h7g6"],
+            "material": 1000,
+            "eval": -845
+          },
+          "g1g4": {
+            "line": ["d7a4", "d4f5", "g6f5", "c1e3", "f5g4"],
+            "material": 1400,
+            "eval": -858
+          },
+          "h2h4": {
+            "line": ["d7a4", "d4f5", "g6f5", "g5g6", "h7g6"],
+            "material": 1000,
+            "eval": -860
+          },
+          "h1g2": {
+            "line": ["d7a4", "d4f5", "g6f5", "g5g6", "h7g6"],
+            "material": 1000,
+            "eval": -873
+          },
+          "g1g3": {
+            "line": ["f5g3", "h2g3", "d7a4", "c1d2", "d6d4"],
+            "material": 1400,
+            "eval": -883
+          },
+          "d4e6": {
+            "line": ["d7a4", "c1e3", "f5e3"],
+            "material": 1200,
+            "eval": -951
+          },
+          "d4f3": {
+            "line": ["d7a4", "c1f4", "d6f4"],
+            "material": 1200,
+            "eval": -994
+          },
+          "d4b3": {
+            "line": ["d7a4", "g1g2", "c4b3"],
+            "material": 1200,
+            "eval": -1022
+          },
+          "f1d3": {
+            "line": ["e4d3", "a4c4", "f5d4"],
+            "material": 500,
+            "eval": -1184
+          }
+        }
+      }
+    ],
+    "game": {
+      "id": "ZENlaGaE",
+      "ply": 46,
+      "white": "Vantroy33",
+      "black": "petraza_00"
+    },
+    "rating": 2240
   }
 ]

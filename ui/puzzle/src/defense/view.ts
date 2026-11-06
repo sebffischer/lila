@@ -7,7 +7,7 @@ import { bind, onInsert, type MaybeVNode } from 'lib/view';
 
 import type DefenseCtrl from './ctrl';
 import type { DefenseLine } from './interfaces';
-import { passPosition, sanLine } from './logic';
+import { passPosition, sanLine, solutionLine } from './logic';
 
 export default function view(ctrl: DefenseCtrl): VNode {
   return h('main.puzzle-defense', [
@@ -17,6 +17,7 @@ export default function view(ctrl: DefenseCtrl): VNode {
         h('h1', i18n.puzzle.defensePuzzles),
         h('span', `${ctrl.index + 1} / ${ctrl.puzzles.length}`),
       ]),
+      h('div.puzzle-defense__rating', i18n.puzzle.ratingX(`${ctrl.puzzle.rating}`)),
       feedback(ctrl),
       actions(ctrl),
       session(ctrl),
@@ -47,18 +48,23 @@ const pieceIcon = (color: Color) => h('div.no-square', h(`piece.king.${color}`))
 const textIcon = (text: string) => h('div.icon', text);
 
 function feedback(ctrl: DefenseCtrl): VNode {
-  const p = ctrl.puzzle;
+  const { threat } = ctrl.current;
   switch (ctrl.mode) {
     case 'intro':
     case 'play':
+      // later moves of a longer defence: the defender is on the right track
       return feedbackBox(
         'play',
         pieceIcon(ctrl.pov),
-        i18n.site.yourTurn,
-        ctrl.threatShown && p.threat
-          ? i18n.puzzle.opponentThreatensX(threatSan(ctrl, p.threat))
-          : i18n.puzzle.findTheOnlyMoveThatHolds,
+        ctrl.step ? i18n.puzzle.bestMove : i18n.site.yourTurn,
+        ctrl.threatShown && threat
+          ? i18n.puzzle.opponentThreatensX(threatSan(ctrl, threat))
+          : ctrl.step
+            ? i18n.puzzle.keepGoing
+            : i18n.puzzle.findTheOnlyMoveThatHolds,
       );
+    case 'next':
+      return feedbackBox('good', textIcon('✓'), i18n.puzzle.bestMove, i18n.puzzle.keepGoing);
     case 'fail': {
       const wrong = ctrl.wrong!;
       const line = sanLine(ctrl.pos, [wrong.uci, ...(wrong.refutation?.line || [])], '?');
@@ -78,8 +84,10 @@ function feedback(ctrl: DefenseCtrl): VNode {
   return feedbackBox(
     ctrl.mode,
     textIcon('✓'),
-    ctrl.mode === 'good' ? i18n.puzzle.onlyMoveThatHolds : sanLine(ctrl.pos, [p.solution], '!'),
-    p.threat ? i18n.puzzle.itParriesX(threatSan(ctrl, p.threat)) : undefined,
+    ctrl.mode === 'good'
+      ? i18n.puzzle.onlyMoveThatHolds
+      : sanLine(ctrl.pos, solutionLine(ctrl.puzzle, ctrl.step), '!'),
+    threat ? i18n.puzzle.itParriesX(threatSan(ctrl, threat)) : undefined,
   );
 }
 
@@ -96,7 +104,7 @@ function actions(ctrl: DefenseCtrl): VNode {
   const buttons: MaybeVNode[] = [];
   switch (ctrl.mode) {
     case 'play':
-      if (ctrl.puzzle.threat)
+      if (ctrl.current.threat)
         buttons.push(button(i18n.puzzle.showTheThreat, ctrl.toggleThreat, ctrl.threatShown));
       buttons.push(button(i18n.site.viewTheSolution, ctrl.viewSolution));
       break;

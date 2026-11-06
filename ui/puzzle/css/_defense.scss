@@ -45,6 +45,11 @@
     }
   }
 
+  &__rating {
+    margin-top: -1em;
+    color: $c-font-dim;
+  }
+
   &__feedback {
     background: $c-bg-zebra;
     padding: 1.5em;
@@ -102,6 +107,11 @@
     flex-flow: row wrap;
     gap: 0.5em;
     justify-content: center;
+  }
+
+  // the puzzle page lists its session newest first, from the bottom up; here it's a fixed list
+  &__session .puzzle__session {
+    flex-flow: row wrap;
   }
 
   &__session a {

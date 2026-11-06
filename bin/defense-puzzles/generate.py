@@ -22,16 +22,30 @@ The checks run in two stages: a shallow multipv-2 search filters
 positions cheaply, then a deep search with one PV per legal move confirms
 the survivors and records, for every wrong move, the line that refutes it.
 
+A defence can take several moves: after the only move, the opponent's
+best reply may bring another position where exactly one move holds. The
+puzzle then goes on (up to --max-steps defender moves), which is what makes
+the harder puzzles hard. Each candidate also records the move actually
+played in the game and the players' ratings, so difficulty estimates can
+be checked against real decisions (see difficulty.py).
+
 Usage:
 
   # 1. scan games for candidates (JSON lines, one candidate per line)
   generate.py scan --pgn games.pgn.zst --stockfish /path/to/stockfish \
-      --games 2000 --out candidates.jsonl
+      --games 2000 --min-elo 2000 --min-base-time 180 --out candidates.jsonl
 
-  # 2. re-verify chosen candidates at a higher depth and export them in
-  #    the format served by /training/defense
+  # 2. rate them and pick some (difficulty.py rate, then difficulty.py pick),
+  #    then re-verify the chosen candidates at a higher depth and export them
+  #    in the format served by /training/defense. The export also drops
+  #    puzzles where a wrong move or the threat loses nothing concrete in
+  #    the line shown (no mate, not even a pawn): "this loses material"
+  #    would not be convincing.
   generate.py export --stockfish /path/to/stockfish --candidates candidates.jsonl \
       --ids abcd1234-31,efgh5678-40 --out modules/puzzle/src/main/resources/defensePuzzles.json
+
+  # 3. rate the export: deeper analysis can shorten or change a defence
+  difficulty.py rate --model difficulty-model.pkl --input defensePuzzles.json --output defensePuzzles.json
   pnpm format  # the repo's formatter also covers the exported JSON
 
 Requires python-chess (and zstandard to read .zst files).
@@ -167,12 +181,39 @@ def deep_check(an, board, cfg, depth):
 
     return {
         "solution": best_pv[0].uci(),
+        "reply": best_pv[1].uci() if len(best_pv) > 1 else None,
         "eval": e1,
         "gap": e1 - e2,
         "legal": len(legal),
         "threat": threat,
         "refutations": refutations,
     }
+
+
+def defence(an, board, cfg, depth):
+    """The whole defence starting at `board`, as a list of steps.
+
+    Each step is the only move that holds (the deep_check data). As long as
+    the opponent's best reply brings another position where exactly one move
+    holds, the defence goes on, up to --max-steps moves. Every step but the
+    last has the opponent's reply under "reply"; the puzzle ends on a move
+    of the defender.
+    """
+    steps = []
+    b = board.copy(stack=False)
+    res = deep_check(an, b, cfg, depth)
+    while res:
+        steps.append(res)
+        b.push_uci(res["solution"])
+        if len(steps) >= cfg.max_steps or not res["reply"] or b.is_game_over():
+            break
+        b.push_uci(res["reply"])
+        if b.is_game_over() or not quick_filter(an, b, cfg):
+            break
+        res = deep_check(an, b, cfg, depth)
+    if steps:
+        steps[-1]["reply"] = None
+    return steps
 
 
 # ---------------------------------------------------------------- scanning
@@ -192,33 +233,41 @@ def _scan_game(task):
     board = chess.Board()
     found = []
     game_id = headers.get("Site", "").rsplit("/", 1)[-1]
+    elo = {chess.WHITE: int(headers["WhiteElo"]), chess.BLACK: int(headers["BlackElo"])}
+    skip_until = 0  # don't start a puzzle in the middle of the previous one
     for ply, uci in enumerate(moves, 1):
         before = board.fen()
         board.push(chess.Move.from_uci(uci))
-        if ply < _cfg.min_ply or board.is_game_over():
+        if ply < max(_cfg.min_ply, skip_until) or board.is_game_over():
             continue
         if not quick_filter(_an, board, _cfg):
             continue
-        res = deep_check(_an, board, _cfg, _cfg.depth)
-        if res:
-            found.append(
-                {
-                    "id": f"{game_id}-{ply}",
-                    "fen": before,
-                    "move": uci,
-                    **res,
-                    "game": {
-                        "id": game_id,
-                        "ply": ply,
-                        "white": headers.get("White"),
-                        "black": headers.get("Black"),
-                        "whiteElo": headers.get("WhiteElo"),
-                        "blackElo": headers.get("BlackElo"),
-                        "date": headers.get("UTCDate") or headers.get("Date"),
-                        "event": headers.get("Event"),
-                    },
-                }
-            )
+        steps = defence(_an, board, _cfg, _cfg.depth)
+        if not steps:
+            continue
+        skip_until = ply + 2 * len(steps)
+        defender = board.turn
+        found.append(
+            {
+                "id": f"{game_id}-{ply}",
+                "fen": before,
+                "move": uci,
+                "steps": steps,
+                # what the player actually did: a free difficulty label
+                "played": moves[ply] if ply < len(moves) else None,
+                "game": {
+                    "id": game_id,
+                    "ply": ply,
+                    "white": headers.get("White"),
+                    "black": headers.get("Black"),
+                    "defenderElo": elo[defender],
+                    "attackerElo": elo[not defender],
+                    "timeControl": headers.get("TimeControl"),
+                    "date": headers.get("UTCDate") or headers.get("Date"),
+                    "event": headers.get("Event"),
+                },
+            }
+        )
     return found
 
 
@@ -231,11 +280,23 @@ def open_pgn(path):
     return open(path, encoding="utf-8")
 
 
+def base_time(tc):
+    """Initial clock time in seconds of a PGN TimeControl like "180+2"."""
+    try:
+        return int(tc.split("+")[0])
+    except (AttributeError, ValueError):
+        return 0
+
+
 def read_games(cfg):
     n = 0
     with open_pgn(cfg.pgn) as pgn:
         while n < cfg.games:
-            game = chess.pgn.read_game(pgn)
+            try:
+                game = chess.pgn.read_game(pgn)
+            except Exception as e:  # a partially downloaded database ends mid-stream
+                print(f"stopped reading games: {e}", file=sys.stderr)
+                return
             if game is None:
                 return
             h = game.headers
@@ -243,7 +304,13 @@ def read_games(cfg):
                 elos = int(h.get("WhiteElo", 0)), int(h.get("BlackElo", 0))
             except ValueError:
                 continue
-            if min(elos) < cfg.min_elo or h.get("Variant", "Standard") != "Standard" or "FEN" in h:
+            if not cfg.min_elo <= min(elos) <= max(elos) <= cfg.max_elo:
+                continue
+            if base_time(h.get("TimeControl")) < cfg.min_base_time:
+                continue
+            if h.get("Variant", "Standard") != "Standard" or "FEN" in h:
+                continue
+            if game.errors:
                 continue
             moves = [m.uci() for m in game.mainline_moves()]
             if len(moves) < 2 * cfg.min_ply:
@@ -270,6 +337,28 @@ def scan(cfg):
 # ---------------------------------------------------------------- export
 
 
+def concrete(line):
+    """Does the line show a real loss: mate, or at least a pawn?"""
+    return bool(line.get("mate")) or line.get("material", 0) >= 100
+
+
+def fair(steps):
+    """Every wrong move, and every threat, must lose something you can see
+    on the board, not just engine evaluation."""
+    return all(
+        (s["threat"] is None or concrete(s["threat"])) and all(concrete(r) for r in s["refutations"].values())
+        for s in steps
+    )
+
+
+def public_step(s):
+    """A defence step as served to the client: no search statistics."""
+    out = {"solution": s["solution"], "threat": s["threat"], "refutations": s["refutations"]}
+    if s["reply"]:
+        out["reply"] = s["reply"]
+    return out
+
+
 def export(cfg):
     cands = {}
     with open(cfg.candidates) as f:
@@ -282,29 +371,33 @@ def export(cfg):
         c = cands[pid]
         board = chess.Board(c["fen"])
         board.push(chess.Move.from_uci(c["move"]))
-        res = deep_check(an, board, cfg, cfg.verify_depth)
-        if not res:
+        steps = defence(an, board, cfg, cfg.verify_depth)
+        if not steps:
             print(f"{pid}: rejected at depth {cfg.verify_depth}", file=sys.stderr)
             continue
-        if res["solution"] != c["solution"]:
-            print(f"{pid}: solution changed {c['solution']} -> {res['solution']}", file=sys.stderr)
+        if not fair(steps):
+            print(f"{pid}: rejected, a wrong move or threat loses nothing concrete", file=sys.stderr)
+            continue
+        old = [s["solution"] for s in c["steps"]]
+        new = [s["solution"] for s in steps]
+        if new != old:
+            print(f"{pid}: defence changed {old} -> {new}", file=sys.stderr)
         g = c["game"]
         puzzles.append(
             {
                 "id": pid,
                 "fen": c["fen"],
                 "move": c["move"],
-                "solution": res["solution"],
-                "threat": res["threat"],
-                "refutations": res["refutations"],
+                "steps": [public_step(s) for s in steps],
                 "game": {"id": g["id"], "ply": g["ply"], "white": g["white"], "black": g["black"]},
             }
         )
-        print(f"{pid}: ok (gap {res['gap']}, eval {res['eval']})", file=sys.stderr)
+        print(f"{pid}: ok ({len(steps)} moves, gaps {[s['gap'] for s in steps]})", file=sys.stderr)
+        # save as we go: deep analysis of a long list takes a while
+        with open(cfg.out, "w") as f:
+            json.dump(puzzles, f, indent=1)
+            f.write("\n")
     an.close()
-    with open(cfg.out, "w") as f:
-        json.dump(puzzles, f, indent=1)
-        f.write("\n")
     print(f"exported {len(puzzles)} puzzles -> {cfg.out}", file=sys.stderr)
 
 
@@ -316,16 +409,19 @@ def main():
     p.add_argument("--min-eval", type=int, default=-200)
     p.add_argument("--max-eval", type=int, default=500)
     p.add_argument("--min-legal", type=int, default=4)
+    p.add_argument("--max-steps", type=int, default=3, help="max number of defender moves in one puzzle")
+    p.add_argument("--quick-depth", type=int, default=10, help="depth of the cheap first filter")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     s = sub.add_parser("scan")
     s.add_argument("--pgn", required=True)
     s.add_argument("--out", required=True)
     s.add_argument("--games", type=int, default=1000)
-    s.add_argument("--min-elo", type=int, default=1600)
+    s.add_argument("--min-elo", type=int, default=1600, help="both players rated at least this")
+    s.add_argument("--max-elo", type=int, default=4000, help="both players rated at most this")
+    s.add_argument("--min-base-time", type=int, default=0, help="min initial clock time in seconds")
     s.add_argument("--min-ply", type=int, default=12)
     s.add_argument("--workers", type=int, default=max(1, mp.cpu_count() // 2))
-    s.add_argument("--quick-depth", type=int, default=10)
     s.add_argument("--depth", type=int, default=16)
 
     e = sub.add_parser("export")

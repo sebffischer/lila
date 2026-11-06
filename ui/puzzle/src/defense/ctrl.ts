@@ -13,8 +13,8 @@ import type { PuzPrefs } from 'lib/puz/interfaces';
 import { sound } from 'lib/puz/util';
 import { storedJsonProp } from 'lib/storage';
 
-import type { DefenseLine, DefenseMode, DefenseOpts, DefensePuzzle } from './interfaces';
-import { isSolution, normalUci, positionOf, refutationOf, startPosition } from './logic';
+import type { DefenseLine, DefenseMode, DefenseOpts, DefensePuzzle, DefenseStep } from './interfaces';
+import { isSolution, normalUci, positionOf, refutationOf, solutionLine, startPosition } from './logic';
 
 const lineDelay = 800;
 
@@ -30,9 +30,10 @@ export default class DefenseCtrl {
   );
 
   index = 0;
+  step = 0; // the defence move being looked for
   mode: DefenseMode = 'intro';
   pov: Color = 'white';
-  pos: Chess; // the puzzle position, after the opponent's move
+  pos: Chess; // the position of the current step, after the opponent's move
   wrong?: { uci: Uci; refutation: DefenseLine | null };
   threatShown = false;
 
@@ -65,6 +66,15 @@ export default class DefenseCtrl {
     return this.puzzles[this.index];
   }
 
+  get current(): DefenseStep {
+    return this.puzzle.steps[this.step];
+  }
+
+  // the opponent's move that led to the current step
+  private get lastMove(): Uci {
+    return this.step ? this.puzzle.steps[this.step - 1].reply! : this.puzzle.move;
+  }
+
   withGround: WithGround = f => {
     const g = this.ground();
     return g ? f(g) : undefined;
@@ -75,6 +85,7 @@ export default class DefenseCtrl {
     this.promotion.cancel();
     this.index = (index + this.puzzles.length) % this.puzzles.length;
     const p = this.puzzle;
+    this.step = 0;
     this.pos = startPosition(p);
     this.pov = this.pos.turn;
     this.mode = 'intro';
@@ -100,15 +111,28 @@ export default class DefenseCtrl {
     if (this.mode !== 'play') return;
     const uci = normalUci(this.pos, { from: parseSquare(orig)!, to: parseSquare(dest)!, promotion })!;
     this.threatShown = false;
-    if (isSolution(this.puzzle, this.pos, uci)) {
-      this.mode = 'good';
-      this.record(true);
-      this.playMove(this.pos.clone(), uci, false);
+    if (isSolution(this.current, this.pos, uci)) {
+      const after = this.playMove(this.pos.clone(), uci, false);
       sound.good();
+      const reply = this.current.reply;
+      if (reply && this.step + 1 < this.puzzle.steps.length) {
+        // the defence goes on: the opponent replies, then it's the defender's turn again
+        this.mode = 'next';
+        this.later(lineDelay, () => {
+          this.playMove(after, reply, true);
+          this.pos = after;
+          this.step++;
+          this.mode = 'play';
+          this.redraw();
+        });
+      } else {
+        this.mode = 'good';
+        this.record(true);
+      }
     } else {
       this.mode = 'fail';
       this.record(false);
-      this.wrong = { uci, refutation: refutationOf(this.puzzle, this.pos, uci) };
+      this.wrong = { uci, refutation: refutationOf(this.current, this.pos, uci) };
       const after = this.playMove(this.pos.clone(), uci, false);
       sound.wrong();
       this.playLine(after, this.wrong.refutation?.line || []);
@@ -120,7 +144,7 @@ export default class DefenseCtrl {
     this.clearTimers();
     this.mode = 'play';
     this.wrong = undefined;
-    this.show(this.pos.clone(), this.puzzle.move, true);
+    this.show(this.pos.clone(), this.lastMove, true);
     this.redraw();
   };
 
@@ -130,8 +154,11 @@ export default class DefenseCtrl {
     this.mode = 'solution';
     this.wrong = undefined;
     this.threatShown = false;
-    this.show(this.pos.clone(), this.puzzle.move);
-    this.later(lineDelay / 2, () => this.playMove(this.pos.clone(), this.puzzle.solution, false));
+    this.show(this.pos.clone(), this.lastMove);
+    const pos = this.pos.clone();
+    solutionLine(this.puzzle, this.step).forEach((uci, i) =>
+      this.later(lineDelay / 2 + lineDelay * i, () => this.playMove(pos, uci, false)),
+    );
     this.redraw();
   };
 
@@ -190,7 +217,7 @@ export default class DefenseCtrl {
   }
 
   private setShapes(): void {
-    const threat = this.threatShown && this.mode === 'play' ? this.puzzle.threat?.line[0] : undefined;
+    const threat = this.threatShown && this.mode === 'play' ? this.current.threat?.line[0] : undefined;
     this.withGround(g =>
       g.setAutoShapes(
         threat ? [{ orig: threat.slice(0, 2) as Key, dest: threat.slice(2, 4) as Key, brush: 'red' }] : [],
